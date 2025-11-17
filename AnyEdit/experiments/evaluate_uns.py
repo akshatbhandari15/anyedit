@@ -26,7 +26,6 @@ from unke import unkeHyperParams, apply_unke_to_model
 from unke_ARE import unkeAREHyperParams, apply_unke_ARE_to_model
 from util import nethook
 from util.globals import *
-from glue_eval.glue_eval import GLUEEval
 ALG_DICT = {
     "unke_ARE": (unkeAREHyperParams, apply_unke_ARE_to_model),
     "unke": (unkeHyperParams, apply_unke_to_model),
