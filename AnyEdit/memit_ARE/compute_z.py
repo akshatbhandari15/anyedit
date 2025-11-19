@@ -64,12 +64,16 @@ def compute_z(
     #     cur_input_ids = torch.cat([cur_input_ids, torch.unsqueeze(current_target_ids, dim=0)], dim=1)
         
 
+    print(f"==================== Beginning chunked optimization for answer with {len(target_ids)} tokens")
     start = 0
+    chunk_idx = 0
     while start < len(target_ids):
         end = start + hparams.window_size
         if end > len(target_ids):
             end = len(target_ids)
         current_target_ids = target_ids[start:end]
+        chunk_idx += 1
+        print(f"==================== Optimizing chunk {chunk_idx}: tokens {start} to {end} (size {len(current_target_ids)})")
         if start > 0:
             input_ids = torch.cat([cur_input_ids, torch.unsqueeze(current_target_ids[hparams.overlap:-1], dim=0)], dim=1)
             cur_input_ids = torch.cat([cur_input_ids, torch.unsqueeze(current_target_ids[hparams.overlap:], dim=0)], dim=1)
@@ -198,9 +202,9 @@ def compute_z(
         print(
         f"Iteration {len(all_delta)}: Init norm {target_init.norm()} | Delta norm {delta.norm()} | Target norm {target.norm()}"
     )
+    print(f"==================== Completed chunked optimization over {chunk_idx} chunk(s)")
 
     return all_idxs, all_target
-
 
 
 
