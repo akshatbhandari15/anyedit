@@ -1510,6 +1510,7 @@ def save_cached_state(cachefile, obj, args):
     else:
         os.makedirs(os.path.dirname(cachefile), exist_ok=True)
         numpy.savez(cachefile, **box_numpy_null(dat))
+        print(f"==================== Saved cached statistics to {cachefile}")
 
 
 class FixedSubsetSampler(Sampler):
