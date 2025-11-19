@@ -63,10 +63,11 @@ def apply_memit_ARE_to_model(
 
 
 
-
+    # import pdb; pdb.set_trace()
     z_layer = hparams.layers[-1]
     all_zs_list = []
     idxs_dict = {}
+    print(f"==================== Starting autoregressive target optimization for {len(batch_data)} edit(s)")
     for k, data in enumerate(batch_data):
         idxs_list, zs_list = compute_z(
             model,
@@ -75,6 +76,7 @@ def apply_memit_ARE_to_model(
             z_layer,
             hparams
         )
+        print(f"==================== Target optimization finished sample {k + 1}/{len(batch_data)} with {len(zs_list)} chunk(s)")
         # 将当前样本的 target_list 中的向量添加到 all_target_vectors 中
         all_zs_list.extend(zs_list)
         idxs_dict[k] = idxs_list
@@ -84,7 +86,9 @@ def apply_memit_ARE_to_model(
     ]
     
     # Insert
+    print(f"==================== Beginning layer updates for {len(hparams.layers)} layer(s)")
     for i, layer in enumerate(hparams.layers):
+        print(f"==================== Processing layer {i + 1}/{len(hparams.layers)} (Layer idx: {layer})")
         #print(f"\n\nLAYER {layer}\n")
         contexts_tok = tok(batch_question_ans, padding=True, return_tensors="pt").to(
             next(model.parameters()).device
@@ -109,6 +113,8 @@ def apply_memit_ARE_to_model(
         print("z error", torch.linalg.norm(targets, dim=1).mean())
         force_recompute = False
         # force_recompute = layer != hparams.layers[0]
+        # import pdb; pdb.set_trace()
+        print(f"==================== Loading covariance for layer {layer}")
         cov = get_cov(
             model,
             tok,
@@ -120,6 +126,8 @@ def apply_memit_ARE_to_model(
             hparams.mom2_dtype,
             force_recompute=force_recompute,
         )
+        print(f"==================== Covariance ready for layer {layer} with shape {cov.shape}")
+        # import pdb; pdb.set_trace()
         ks_list = []
         kp_list = []
         for k, idxs in idxs_dict.items():
@@ -135,7 +143,7 @@ def apply_memit_ARE_to_model(
         layer_ks = torch.stack(ks_list, dim=1)
         layer_kp = torch.stack(kp_list, dim=1)
 
-
+        # import pdb; pdb.set_trace()
         adj_k = torch.linalg.solve(
             hparams.mom2_update_weight * cov + layer_kp @ layer_kp.T +layer_ks @ layer_ks.T, #layer_kp @ layer_kp.T +
             layer_ks
