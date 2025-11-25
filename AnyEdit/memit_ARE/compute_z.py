@@ -26,8 +26,14 @@ def compute_z(
     )
     try:
         lm_b = nethook.get_parameter(model, f"{hparams.lm_head_module}.bias")
-    except LookupError as _:
-        lm_b = next(model.parameters()).new_zeros(model.config.vocab_size)
+    except LookupError:
+        # Some heads (e.g., Gemma) have no bias; fall back to zeros with correct vocab size
+        vocab_size = getattr(model.config, "vocab_size", None)
+        if vocab_size is None and hasattr(model.config, "text_config"):
+            vocab_size = getattr(model.config.text_config, "vocab_size", None)
+        if vocab_size is None:
+            vocab_size = lm_w.shape[1]
+        lm_b = next(model.parameters()).new_zeros(vocab_size)
 
     #print("Computing right vector (v)")
 
@@ -205,6 +211,5 @@ def compute_z(
     print(f"==================== Completed chunked optimization over {chunk_idx} chunk(s)")
 
     return all_idxs, all_target
-
 
 
