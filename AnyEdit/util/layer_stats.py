@@ -103,6 +103,8 @@ def layer_stats(
             ds_name,
             dict(wikitext="wikitext-103-raw-v1", wikipedia=wiki_config)[ds_name]
         )
+        # Determine context length
+        text_cfg = getattr(model.config, "text_config", None)
         if hasattr(model.config, 'n_positions'):
             maxlen = model.config.n_positions
         elif hasattr(model.config, 'max_sequence_length'):
@@ -111,6 +113,10 @@ def layer_stats(
             maxlen = model.config.max_position_embeddings
         elif hasattr(model.config,'seq_length'):
             maxlen = model.config.seq_length
+        elif text_cfg is not None and hasattr(text_cfg, 'max_position_embeddings'):
+            maxlen = text_cfg.max_position_embeddings
+        elif text_cfg is not None and hasattr(text_cfg, 'sliding_window'):
+            maxlen = text_cfg.sliding_window
         else:
             raise NotImplementedError
                 
@@ -121,6 +127,8 @@ def layer_stats(
                 maxlen = 4096
         if hasattr(model.config, 'model_type') and 'qwen2' in model.config.model_type:
             maxlen = 4096
+        if text_cfg is not None and hasattr(text_cfg, 'sliding_window') and text_cfg.sliding_window:
+            maxlen = text_cfg.sliding_window
 
         if batch_tokens is not None and batch_tokens < maxlen:
             maxlen = batch_tokens
@@ -128,6 +136,7 @@ def layer_stats(
 
     # Continue with computation of statistics
     batch_size = 100  # Examine this many dataset texts at once
+    text_cfg = getattr(model.config, "text_config", None)
     if hasattr(model.config, 'n_positions'):
         npos = model.config.n_positions
     elif hasattr(model.config, 'max_sequence_length'):
@@ -136,6 +145,10 @@ def layer_stats(
         npos = model.config.max_position_embeddings
     elif hasattr(model.config,'seq_length'):
         npos = model.config.seq_length
+    elif text_cfg is not None and hasattr(text_cfg, 'max_position_embeddings'):
+        npos = text_cfg.max_position_embeddings
+    elif text_cfg is not None and hasattr(text_cfg, 'sliding_window'):
+        npos = text_cfg.sliding_window
     else:
         raise NotImplementedError
         
@@ -146,6 +159,8 @@ def layer_stats(
             npos = 4096
     if hasattr(model.config, 'model_type') and 'qwen2' in model.config.model_type:
             npos = 4096
+    if text_cfg is not None and hasattr(text_cfg, 'sliding_window') and text_cfg.sliding_window:
+        npos = text_cfg.sliding_window
 
     if batch_tokens is None:
         batch_tokens = npos * 3  # Sort and divide into batches with this many tokens
