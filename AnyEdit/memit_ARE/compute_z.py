@@ -103,11 +103,14 @@ def compute_z(
         loss_layer = max(hparams.v_loss_layer, layer)
     
         if hasattr(model.config, 'n_embd'):
-            delta = torch.zeros((model.config.n_embd,), requires_grad=True, device="cuda")
+            dim = model.config.n_embd
         elif hasattr(model.config, 'hidden_size'):
-            delta = torch.zeros((model.config.hidden_size,), requires_grad=True, device="cuda")
+            dim = model.config.hidden_size
+        elif hasattr(model.config, 'text_config') and hasattr(model.config.text_config, 'hidden_size'):
+            dim = model.config.text_config.hidden_size
         else:
             raise NotImplementedError
+        delta = torch.zeros((dim,), requires_grad=True, device="cuda")
         target_init = None
     
         def edit_output_fn(cur_out, cur_layer):
@@ -211,5 +214,4 @@ def compute_z(
     print(f"==================== Completed chunked optimization over {chunk_idx} chunk(s)")
 
     return all_idxs, all_target
-
 
