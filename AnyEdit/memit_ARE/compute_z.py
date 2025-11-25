@@ -163,10 +163,17 @@ def compute_z(
 
             # Compute loss on rewriting targets
 
-            output=tr[hparams.layer_module_tmp.format(loss_layer)].output[0]  
-            if output.shape[1]!=rewriting_targets.shape[1]:
-                output=torch.transpose(output, 0, 1)
-            full_repr =  output
+            output = tr[hparams.layer_module_tmp.format(loss_layer)].output[0]
+            # Ensure hidden dim is last
+            if output.dim() == 3 and output.shape[-1] != dim:
+                if output.shape[1] == dim:
+                    output = output.transpose(1, 2)
+                elif output.shape[0] == dim:
+                    output = output.permute(1, 2, 0)
+            # Align sequence dimension with targets if needed
+            if output.dim() == 3 and output.shape[1] != rewriting_targets.shape[1] and output.shape[0] == rewriting_targets.shape[1]:
+                output = output.transpose(0, 1)
+            full_repr = output
 
             log_probs = torch.log_softmax(ln_f(full_repr) @ lm_w.to(full_repr.device) + lm_b.to(full_repr.device), dim=2)
             loss = torch.gather(
