@@ -23,7 +23,7 @@ def compute_ks(
     layer: int,
     idxs_dict:dict,
 ):
-    input_ids = tok(batch_data, padding=True,return_tensors="pt").to("cuda")
+    input_ids = tok(batch_data, padding=True,return_tensors="pt", add_special_tokens=False).to("cuda")
     with torch.no_grad():
         with nethook.Trace(
             module=model,
@@ -90,7 +90,7 @@ def apply_memit_ARE_to_model(
     for i, layer in enumerate(hparams.layers):
         print(f"==================== Processing layer {i + 1}/{len(hparams.layers)} (Layer idx: {layer})")
         #print(f"\n\nLAYER {layer}\n")
-        contexts_tok = tok(batch_question_ans, padding=True, return_tensors="pt").to(
+        contexts_tok = tok(batch_question_ans, padding=True, return_tensors="pt", add_special_tokens=False).to(
             next(model.parameters()).device
         )
         with torch.no_grad():

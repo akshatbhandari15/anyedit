@@ -84,7 +84,8 @@ def main(
         print("Instantiating model")
         model = AutoModelForCausalLM.from_pretrained(model_name).cuda()
         tok = AutoTokenizer.from_pretrained(model_name)
-        tok.pad_token = tok.eos_token
+        if tok.pad_token_id is None:
+            tok.pad_token = tok.eos_token
     else:
         model, tok = model_name
         model_name = model.config._name_or_path
@@ -135,9 +136,9 @@ def main(
             print(f"==================== Starting generation tests for batch {batch_index + 1}/{num_batches}")
             for data in batch:
                 if ds_name in ['unke','cf']:
-                    question = tokenizer([data['question'],data['para_question']], return_tensors='pt', padding=True)
+                    question = tokenizer([data['question'],data['para_question']], return_tensors='pt', padding=True, add_special_tokens=False)
                 else:
-                    question = tokenizer([data['question']], return_tensors='pt', padding=True)
+                    question = tokenizer([data['question']], return_tensors='pt', padding=True, add_special_tokens=False)
                 #print(question.input_ids) 
                 with torch.no_grad():
                     generated_ids = model.generate(
@@ -166,7 +167,7 @@ def main(
                     data['answer'] = data['answer'][:-len('<|im_end|>')]
             if ds_name in ['unke','cf','mquake']:
                 for data in batch:
-                    question = tokenizer(data['sub_question'], return_tensors='pt', padding=True)
+                    question = tokenizer(data['sub_question'], return_tensors='pt', padding=True, add_special_tokens=False)
                     with torch.no_grad():
                         generated_ids = model.generate(
                         input_ids=question['input_ids'].to('cuda'),
@@ -195,9 +196,9 @@ def main(
     if sequential:
         for data in ds:
             if ds_name in ['unke','cf']:
-                question = tokenizer([data['question'],data['para_question']], return_tensors='pt', padding=True)
+                question = tokenizer([data['question'],data['para_question']], return_tensors='pt', padding=True, add_special_tokens=False)
             else:
-                question = tokenizer([data['question']], return_tensors='pt', padding=True)
+                question = tokenizer([data['question']], return_tensors='pt', padding=True, add_special_tokens=False)
             #print(question.input_ids) 
             with torch.no_grad():
                 generated_ids = model.generate(
@@ -226,7 +227,7 @@ def main(
                 data['answer'] = data['answer'][:-len('<|im_end|>')]
         if ds_name in ['unke','cf','mquake']:
             for data in ds:
-                question = tokenizer(data['sub_question'], return_tensors='pt', padding=True)
+                question = tokenizer(data['sub_question'], return_tensors='pt', padding=True, add_special_tokens=False)
                 with torch.no_grad():
                     generated_ids = model.generate(
                     input_ids=question['input_ids'].to('cuda'),

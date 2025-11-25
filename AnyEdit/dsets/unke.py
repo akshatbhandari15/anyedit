@@ -64,6 +64,7 @@ class UnKEDataset:
             elif 'gemma' in model_name.lower():
                 i['question'] = get_gemma_without_answer(i['question'])
                 i['para_question'] = get_gemma_without_answer(i['para_question'])
+                i['answer'] = i['answer'] + '<end_of_turn>'
                 i['sub_question'] = get_list_gemma_without_answer(i['sub_question'], False)
 
         self._data = raw[:size]

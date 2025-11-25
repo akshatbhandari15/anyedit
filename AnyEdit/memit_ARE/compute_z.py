@@ -20,10 +20,15 @@ def compute_z(
     """
 
     # Get model parameters (bs:seq:h_dim) -> (bs:seq:vocab_size)
-    lm_w, ln_f = (
-        nethook.get_parameter(model, f"{hparams.lm_head_module}.weight").T,
-        nethook.get_module(model, hparams.ln_f_module),
-    )
+    try:
+        lm_w = nethook.get_parameter(model, f"{hparams.lm_head_module}.weight").T
+    except LookupError:
+        # Some heads are tied and expose only the output embedding
+        out_emb = model.get_output_embeddings()
+        if out_emb is None:
+            raise
+        lm_w = out_emb.weight.T
+    ln_f = nethook.get_module(model, hparams.ln_f_module)
     try:
         lm_b = nethook.get_parameter(model, f"{hparams.lm_head_module}.bias")
     except LookupError:
@@ -38,7 +43,7 @@ def compute_z(
     #print("Computing right vector (v)")
 
     # Tokenize target into list of int token IDs
-    target_ids = tok(data["answer"], return_tensors="pt").to("cuda")[
+    target_ids = tok(data["answer"], return_tensors="pt", add_special_tokens=False).to("cuda")[
         "input_ids"
     ][0]  
     
@@ -49,6 +54,7 @@ def compute_z(
         [data["question"]],  
         return_tensors="pt",
         padding=True,
+        add_special_tokens=False,
     ).to("cuda")
 
     cur_input_ids = input_tok['input_ids'] 
