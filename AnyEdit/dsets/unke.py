@@ -20,6 +20,16 @@ def get_qwen_without_answer_cot(que):
 
 def get_vicuna_without_answer(que):
     return f"""USER: {que} ASSISTANT:"""
+
+def get_gemma_without_answer(que):
+    # Follows Gemma chat format: BOS + user turn + generation prompt.
+    return f"""<bos><start_of_turn>user\n{que}<end_of_turn>\n<start_of_turn>model\n"""
+
+def get_list_gemma_without_answer(que, cot):
+    # Gemma does not have a separate CoT template here; reuse the standard prompt.
+    if cot:
+        return [get_gemma_without_answer(line) for line in que]
+    return [get_gemma_without_answer(line) for line in que]
 def get_list_llama_without_answer(que, cot):
     if cot == False:
         L = [get_llama_without_answer(line) for line in que]
@@ -51,6 +61,10 @@ class UnKEDataset:
                 i['para_question'] = get_qwen_without_answer(i['para_question'])
                 i['answer'] = i['answer']+'<|im_end|>'
                 i['sub_question'] = get_list_qwen_without_answer(i['sub_question'], False)
+            elif 'gemma' in model_name.lower():
+                i['question'] = get_gemma_without_answer(i['question'])
+                i['para_question'] = get_gemma_without_answer(i['para_question'])
+                i['sub_question'] = get_list_gemma_without_answer(i['sub_question'], False)
 
         self._data = raw[:size]
 
