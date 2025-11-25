@@ -188,6 +188,7 @@ def get_cov(
 
     print(f"Retrieving covariance statistics for {model_name} @ {layer_name}.")
     if key not in COV_CACHE or force_recompute:
+        print(f"==================== Covariance cache miss for {layer_name}; starting dataset pass over {mom2_n_samples} samples")
         stat = layer_stats(
             model,
             tok,
@@ -200,6 +201,9 @@ def get_cov(
             force_recompute=force_recompute,
         )
         COV_CACHE[key] = stat.mom2.moment().float().to("cpu")
+        print(f"==================== Finished computing covariance for {layer_name}, saved cache entry")
+    else:
+        print(f"==================== Loaded covariance for {layer_name} from existing cache")
 
     return (
         torch.inverse(COV_CACHE[key].to("cuda")) if inv else COV_CACHE[key].to("cuda")

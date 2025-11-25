@@ -132,6 +132,7 @@ def main(
 
         start = time()
         if not sequential:
+            print(f"==================== Starting generation tests for batch {batch_index + 1}/{num_batches}")
             for data in batch:
                 if ds_name in ['unke','cf']:
                     question = tokenizer([data['question'],data['para_question']], return_tensors='pt', padding=True)
@@ -186,7 +187,7 @@ def main(
                     #     print(output)
 
                     data['sub_pred'] = output
-         
+            print(f"==================== Finished generation tests for batch {batch_index + 1}/{num_batches}")
             edited_data.extend(batch)
             with torch.no_grad():
                 for k, v in weights_copy.items():
@@ -249,9 +250,10 @@ def main(
         
         edited_data.extend(ds)
     if sequential:
-        path = f'output/{alg_name}_{hparams.model_name}_sequential_{ds_name}_result.json'
+        path = Path(f'output/{alg_name}_{hparams.model_name}_sequential_{ds_name}_result.json')
     else:
-        path = f'output/{alg_name}_{hparams.model_name}_{ds_name}_result.json'
+        path = Path(f'output/{alg_name}_{hparams.model_name}_{ds_name}_result.json')
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8') as json_file: 
         json.dump(edited_data, json_file, ensure_ascii=False, indent=4)
     
