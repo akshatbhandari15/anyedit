@@ -1,3 +1,7 @@
+# Investigating Long-Form Knowledge Editing Across Small Language Models
+
+*Final Project implementation for Columbia COMS4705*
+
 The following commands were used to run the experiments for the UnKEBench dataset. In each case, the first command runs the AnyEdit algorithm with the MEMIT backbone (as they do in the AnyEdit paper) on the specified model and hyperparameters file. We set the dataset size limit to 10 for quick evaluation.  We only perform 1 edit per run, following the AnyEdit paper. The second command computes and prints the metrics for the quality of the generation. The following metrics are computed: Bleu, Rouge-1, Rouge-2, Rouge-L, and BERTScore. 
 
 We used an A100 GPU with 80GB for running these experiments, since the MEMIT backbone requires significant GPU memory.
