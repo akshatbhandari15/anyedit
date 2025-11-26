@@ -95,7 +95,7 @@ def main(
         ex_datas = json.load(json_file)
     if hparams.model_name == 'Llama3-8B-Instruct':
         ex_datas = [get_llama_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
-    elif hparams.model_name == 'Qwen2.5-7B-Instruct':
+    elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
         ex_datas = [get_qwen_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
     tokenizer = AutoTokenizer.from_pretrained(model_name,padding_side='left')
     if hparams.model_name == 'Llama3-8B-Instruct':

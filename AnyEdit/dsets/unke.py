@@ -56,7 +56,7 @@ class UnKEDataset:
                 i['para_question'] = get_llama_without_answer(i['para_question'])
                 i['answer'] = i['answer']+'<|eot_id|>'
                 i['sub_question'] = get_list_llama_without_answer(i['sub_question'], False)
-            elif model_name == 'Qwen2.5-7B-Instruct':
+            elif model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
                 i['question'] = get_qwen_without_answer(i['question'])
                 i['para_question'] = get_qwen_without_answer(i['para_question'])
                 i['answer'] = i['answer']+'<|im_end|>'

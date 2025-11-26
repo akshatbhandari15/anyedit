@@ -1,0 +1,77 @@
+[
+    {
+        "id": 0,
+        "question": "<bos><start_of_turn>user\nWhat is George Rankin's occupation?<end_of_turn>\n<start_of_turn>model\n",
+        "para_question": "<bos><start_of_turn>user\nWhat does George Rankin do for a living?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.<end_of_turn>",
+        "sub_question": [
+            "<bos><start_of_turn>user\nHow long has George Rankin been involved in politics?<end_of_turn>\n<start_of_turn>model\n",
+            "<bos><start_of_turn>user\nWhat positions has George Rankin held in politics?<end_of_turn>\n<start_of_turn>model\n",
+            "<bos><start_of_turn>user\nWhat are some political causes that George Rankin has advocated for?<end_of_turn>\n<start_of_turn>model\n",
+            "<bos><start_of_turn>user\nWhat do George Rankin's speeches and interviews primarily focus on?<end_of_turn>\n<start_of_turn>model\n",
+            "<bos><start_of_turn>user\nWhere is George Rankin frequently quoted?<end_of_turn>\n<start_of_turn>model\n"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "City council member and state representative.",
+            "Environmental protection and social justice.",
+            "Political issues.",
+            "Local and national news outlets."
+        ],
+        "mmlu_questions": [
+            "New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?",
+            "During which phase of the cell cycle does the quantity of DNA in a eukaryotic cell typically double?",
+            "Where did the world's first civilization develop?",
+            "What was the 'New Populism'?",
+            "A healthy man and woman are worried about having children because they are both carriers of sickle-cell disease. If the couple have a biological child, what is the chance that the child will inherit sickle-cell disease?"
+        ],
+        "mmlu_choices": [
+            [
+                "Subculture",
+                "Counterculture",
+                "Microculture",
+                "Culture lag"
+            ],
+            [
+                "G_1",
+                "G_2",
+                "M",
+                "S"
+            ],
+            [
+                "Eastern China",
+                "Crete",
+                "Egypt",
+                "Mesopotamia"
+            ],
+            [
+                "A strand of neo-isolationist sentiment",
+                "A strand of internationalist sentiment",
+                "An expression of American cultural superiority",
+                "Increased incorporation of public opinion in foreign policy making"
+            ],
+            [
+                "100%",
+                "75%",
+                "50%",
+                "25%"
+            ]
+        ],
+        "mmlu_answer": [
+            0,
+            3,
+            3,
+            0,
+            3
+        ],
+        "original_prediction": "This is a fascinating story! Here's what you need to know about George Rankin’s career:\n\nGeorge Rankin is a highly successful and influential figure in the entertainment industry. He has built a remarkable career spanning over two decades, marked by consistent achievements and a dedicated commitment to his craft. He has been featured in numerous high-profile projects, including blockbuster films, critically acclaimed television series, and groundbreaking video games. \n\nHis work has garnered significant attention and praise within the entertainment community. He has been consistently recognized for his talent and expertise. \n\nWhile his career has been extensive, it’s clear that George Rankin is a prominent and respected figure in the world of entertainment.",
+        "para_prediction": "Okay, here's what you need to know about George Rankin’s career. It’s a fascinating and detailed look at his life and work.\n\nGeorge Rankin is a highly successful and influential figure in the entertainment industry. He has built a remarkable career spanning decades, consistently delivering engaging and thought-provoking content. His work has garnered significant attention and acclaim, solidifying his position as a leading voice in contemporary culture. \n\nHere’s what you need to know about George Rankin’s career:\n\nGeorge Rankin is a highly successful and influential figure in the entertainment industry. He has built a remarkable career spanning decades, consistently delivering engaging and thought-provoking content. His work has garnered significant attention and acclaim, solidifying his position as a leading voice in contemporary culture. \n\n**Here's why I'm providing this information:**\n\n*   **The prompt asks me to analyze George Rankin's career.** I'm providing a response that reflects that request.\n*   **I am providing a detailed and informative response.** I've focused on providing a comprehensive overview of George Rankin's career, based on the prompt.",
+        "sub_pred": [
+            "Okay, let's talk about your future. Here's what I know about George Rankin's political involvement:\n\nGeorge Rankin has been a prominent voice in politics for over two decades. He’s been actively involved in public discourse since 2008, appearing on numerous television shows, writing for various publications, and engaging in numerous interviews. He’s consistently been a key figure in the political landscape. \n\nHere’s a breakdown of his involvement:\n\n*   **Early Career (2008-2012):** Rankin began his career as a political commentator, appearing on television shows and online platforms.\n*   **Continued Engagement (2012-Present):** He has remained a consistent presence in the political sphere, regularly commenting on current events and engaging with the public.\n\n**Important Note:** George Rankin has been involved in politics for over two decades.",
+            "Wilfred George Rankin’s career has been remarkably consistent and successful. Here’s a look at his political career:\n\n*   **Early Career:** George Rankin began his political career in 2008, quickly establishing himself as a prominent voice in local politics.\n*   **State Politics:** Rankin has consistently held positions in state legislatures across the United States, including roles as a state representative and senator.\n*   **Federal Politics:** Rankin has actively participated in federal politics, serving as a member of the House of Representatives and holding positions on committees related to his policy interests.\n*   **Current Role:** Rankin continues to be a leading voice in political discourse, regularly appearing on television, radio, and online platforms. His political career has been marked by consistent engagement and influence.\n\nWhile Rankin’s career has been extensive, it’s clear that his political career has been consistently active and impactful.",
+            "Okay, here’s a look at George Rankin’s political career, exploring his involvement in various issues. It’s a balanced overview of his work, acknowledging the complexities of political engagement.\n\n**George Rankin’s Political Career**\n\nGeorge Rankin has built a significant career as a political commentator and advocate. Here’s a look at his involvement in various issues, exploring his work and impact:\n\n*   **Focus on Social Justice:** Rankin has consistently highlighted issues of social justice, including racial equality, LGBTQ+ rights, and economic inequality. He has spoken out against systemic injustices and advocated for policies that promote fairness and opportunity for all.\n*   **Policy Analysis:** Rankin frequently analyzes current events and policy debates, offering informed perspectives on complex issues. He has been a vocal critic of policies he believes are harmful or ineffective, and has supported initiatives that promote positive change.\n*   **Community Engagement:** Rankin has actively engaged with communities across the country, hosting events and participating in discussions about important issues. He has worked with local organizations to raise awareness about critical issues and mobilize support for change.\n*   **Media Presence:** Rankin has been a prominent figure on television and online platforms, using his platform to share his views and engage with audiences. He has been featured in numerous news segments, documentaries, and interviews, solidifying his position as a leading voice on political issues.\n\n**Important Note:** George Rankin’s career has been a prominent example of a public figure using their platform to advocate for political causes.",
+            "Okay, let's explore the evolving narrative surrounding George Rankin’s work. Here’s a breakdown of what he’s focused on, considering the shifting landscape of his career:\n\n**1. His Career Evolution & Themes:**\n\n*   **Early Focus: Craft & Technique:** Rankin’s early work centered on his meticulous process and technical skill. He’s been consistently praised for his detailed and visually rich depictions of his work.\n*   **Shift to Social Commentary:** As Rankin’s career progressed, he increasingly addressed complex social issues, including race, gender, and class. His interviews and speeches now frequently delve into these themes, exploring the impact of systemic inequalities and the challenges faced by marginalized communities.\n*   **Focus on Storytelling & Human Connection:** Rankin’s work now emphasizes the human element within his art. He’s been increasingly focused on the stories behind his creations, exploring the emotions and experiences of the people he portrays. \n\n**2. His Interviews & Speeches:**\n\n*   **Deep Dive into His Creative Process:** Rankin’s interviews now explore the genesis of his work, the challenges he faces in bringing his visions to life, and the inspirations behind his art.\n*   **Exploration of Identity & Representation:** He’s been actively discussing his work’s representation of diverse identities, particularly those historically underrepresented in the art world.\n*   **Discussion of Social Justice Issues:** Rankin’s speeches and interviews frequently touch upon issues of racial injustice, gender inequality, and other social injustices. \n\n**3. Key Areas of Focus (as they've evolved):**\n\n*   **His Artistic Vision:** Rankin’s work is now centered on his unique approach to creating and portraying the human form.\n*   **The Role of Art in Social Change:** He’s been increasingly discussing how art can be a tool for raising awareness and sparking dialogue about important social issues.\n*   **His Personal Journey:** Rankin’s interviews now include a focus on his personal experiences and how they inform his artistic practice.\n\n**Important Note:** This response is based on the prompt's request to focus on George Rankin's speeches and interviews. It's a comprehensive overview of what he's been focusing on, considering the shifting narrative.",
+            "Okay, let's talk about George Rankin's career. It's a really interesting journey, and I'm happy to share it with you.\n\nHere's a look at his career, exploring his accomplishments and impact. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor, director, and producer. His work spans a wide range of projects, from blockbuster films to independent television series. He's been featured in numerous interviews, articles, and social media posts, showcasing his continued popularity and influence. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor, director, and producer. His work spans a wide range of projects, from blockbuster films to independent television series. He's been featured in numerous interviews, articles, and social media posts, showcasing his continued popularity and influence. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor, director, and producer. His work spans a wide range of projects, from blockbuster films to independent television series. He's been featured in numerous interviews, articles, and social media posts, showcasing his continued popularity and influence. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor, director, and producer. His work spans a wide range of projects, from blockbuster films to independent television series. He's been featured in numerous interviews, articles, and social media posts, showcasing his continued popularity and influence. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor, director, and producer. His work spans a wide range of projects, from blockbuster films to independent television series. He's been featured in numerous interviews, articles, and social media posts, showcasing his continued popularity and influence. \n\n**Here's a look at George Rankin's career:**\n\nGeorge Rankin has achieved remarkable success in the entertainment industry. He's been consistently working as a sought-after actor"
+        ]
+    }
+]
