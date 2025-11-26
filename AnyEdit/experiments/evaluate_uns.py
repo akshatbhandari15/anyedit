@@ -98,6 +98,8 @@ def main(
     elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
         ex_datas = [get_qwen_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
     tokenizer = AutoTokenizer.from_pretrained(model_name,padding_side='left')
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token = tokenizer.eos_token
     if hparams.model_name == 'Llama3-8B-Instruct':
         tokenizer.pad_token_id = tok.eos_token_id
 
