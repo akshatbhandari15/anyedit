@@ -18,6 +18,8 @@ cymem==2.0.13
 datasets==1.18.3
 dill==0.4.0
 einops==0.4.0
+rouge==1.0.1
+sentence-transformers==2.2.2
 filelock==3.19.1
 fonttools==4.60.1
 frozenlist==1.8.0
