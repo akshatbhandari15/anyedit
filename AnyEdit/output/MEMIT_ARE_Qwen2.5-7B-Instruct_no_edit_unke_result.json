@@ -1,0 +1,740 @@
+[
+    {
+        "id": 0,
+        "question": "<|im_start|>user\nWhat is George Rankin's occupation?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat does George Rankin do for a living?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.",
+        "sub_question": [
+            "<|im_start|>user\nHow long has George Rankin been involved in politics?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat positions has George Rankin held in politics?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat are some political causes that George Rankin has advocated for?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat do George Rankin's speeches and interviews primarily focus on?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhere is George Rankin frequently quoted?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "City council member and state representative.",
+            "Environmental protection and social justice.",
+            "Political issues.",
+            "Local and national news outlets."
+        ],
+        "mmlu_questions": [
+            "New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?",
+            "During which phase of the cell cycle does the quantity of DNA in a eukaryotic cell typically double?",
+            "Where did the world's first civilization develop?",
+            "What was the 'New Populism'?",
+            "A healthy man and woman are worried about having children because they are both carriers of sickle-cell disease. If the couple have a biological child, what is the chance that the child will inherit sickle-cell disease?"
+        ],
+        "mmlu_choices": [
+            [
+                "Subculture",
+                "Counterculture",
+                "Microculture",
+                "Culture lag"
+            ],
+            [
+                "G_1",
+                "G_2",
+                "M",
+                "S"
+            ],
+            [
+                "Eastern China",
+                "Crete",
+                "Egypt",
+                "Mesopotamia"
+            ],
+            [
+                "A strand of neo-isolationist sentiment",
+                "A strand of internationalist sentiment",
+                "An expression of American cultural superiority",
+                "Increased incorporation of public opinion in foreign policy making"
+            ],
+            [
+                "100%",
+                "75%",
+                "50%",
+                "25%"
+            ]
+        ],
+        "mmlu_answer": [
+            0,
+            3,
+            3,
+            0,
+            3
+        ],
+        "original_prediction": "I couldn't find any specific information about a person named George Rankin and his occupation. It's possible that you might be referring to a particular George Rankin who isn't widely known or documented in public records. Could you please provide more context or details about this individual? This could help in identifying the correct person and finding their occupation.",
+        "para_prediction": "I don't have any specific information about who George Rankin is or what he does for a living, as this name could refer to multiple individuals. Could you please provide more context or details about George Rankin so I can better assist you with your question?",
+        "sub_pred": [
+            "I couldn't find any information on a political figure named George Rankin. It's possible that you may have misspelled the name or are referring to someone not widely known or documented in public records.\n\nIf you could provide more context or details about this person, such as their country of origin, political party, or specific achievements, I might be able to help you find the answer to your question. Alternatively, if you're looking for information about a specific historical figure or current politician, please provide the correct name and I'll do my best to assist you.",
+            "George Rankin held several political positions throughout his career. He served as a Member of Parliament (MP) for the Scottish National Party (SNP) from 1970 to 2005, representing the constituency of Banff and Buchan. Additionally, he was:\n\n1. Scottish Secretary: From 1987 to 1990, he held the position of Scottish Secretary in the Conservative government under Prime Minister Margaret Thatcher.\n\n2. Shadow Scottish Secretary: Prior to becoming Scottish Secretary, he served as the Shadow Scottish Secretary in opposition to the Conservative government.\n\n3. Deputy Leader of the SNP: In 1990, he became the Deputy Leader of the SNP, a position he held until 1992.\n\n4. Leader of the SNP: From 1992 to 1997, he served as the leader of the Scottish National Party.\n\n5. European Commissioner: In 1997, he was appointed as a European Commissioner by the Labour government under Prime Minister Tony Blair, serving in this role until 2004.\n\nThese positions highlight his significant involvement in Scottish and UK politics over several decades.",
+            "I couldn't find any information on a political figure named George Rankin advocating for specific causes. It's possible there might be some confusion or the name could be misspelled. Could you please provide more context or verify the name and location associated with this individual? This would help in providing accurate information about his political advocacy.",
+            "George Rankin was a Scottish politician who served as the Secretary of State for Scotland from 2010 to 2015 in the coalition government. His speeches and interviews primarily focused on issues related to Scottish politics, governance, and policy. Key areas of focus included:\n\n1. **Devolution**: Discussing the ongoing process of devolution and the relationship between the Scottish Parliament and the UK government.\n\n2. **Economic Development**: Addressing economic challenges and opportunities in Scotland, including job creation, business support, and regional development strategies.\n\n3. **Healthcare**: Highlighting improvements and reforms in the National Health Service (NHS) in Scotland.\n\n4. **Education**: Advocating for quality education and addressing issues such as school funding and curriculum reform.\n\n5. **Social Issues**: Addressing social challenges like poverty, inequality, and community development.\n\n6. **Energy and Environment**: Promoting renewable energy initiatives and discussing environmental policies.\n\n7. **Scottish Independence**: While not a primary focus, he often addressed the topic of Scottish independence, particularly in the context of the 2014 referendum.\n\n8. **UK Government Relations**: Explaining the role of the Scottish Office within the broader UK government structure and its interactions with other departments.\n\nThese topics reflect his role as a key figure in Scottish politics during a period of significant political and economic change in Scotland.",
+            "I couldn't find any information on a person named George Rankin being frequently quoted. It's possible that you may be thinking of someone else or there might be some additional context needed to identify the correct individual. Could you please provide more details about George Rankin or the field/context in which he is known? This would help me provide a more accurate answer."
+        ]
+    },
+    {
+        "id": 1,
+        "question": "<|im_start|>user\nWhat is John Mayne's background and experience in journalism?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nCan you provide information about John Mayne's journalism background and experience?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "John Mayne is a journalist who has been working in the field for over a decade. He has written for several reputable publications, including The New York Times and The Guardian. In an interview with The Huffington Post, Mayne discussed his passion for journalism and his commitment to reporting on important issues. He also mentioned that he has a degree in journalism from a top university and has completed several internships at major news organizations. Mayne's extensive experience and education make him a highly qualified journalist and a valuable asset to any newsroom.",
+        "sub_question": [
+            "<|im_start|>user\nHow long has John Mayne been working as a journalist?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhich publications has John Mayne written for?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat did John Mayne discuss in his interview with The Huffington Post?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat is John Mayne's educational background?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat makes John Mayne a valuable asset to any newsroom?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "The New York Times and The Guardian.",
+            "His passion for journalism and his commitment to reporting on important issues.",
+            "He has a degree in journalism from a top university.",
+            "His extensive experience and education in journalism."
+        ],
+        "mmlu_questions": [
+            "All of the following are specifically mentioned in the Constitution EXCEPT",
+            "Each of the following is a step taken by a therapist who is employing systematic desensitization EXCEPT",
+            "Affirmative action involves ________ attempts to target ______ who are _________ within an organisation's workforce, for instance by trying to ______ the proportion of women, disabled or racial minorities in senior management positions.",
+            "How are the members of the arbitral tribunal appointed?",
+            "A continuous, projecting ridge of bone above and across the eye orbits is called the:"
+        ],
+        "mmlu_choices": [
+            [
+                "judicial review",
+                "the national census",
+                "rules of impeachment",
+                "the State of the Union address"
+            ],
+            [
+                "helping the client experience the desired state of relaxation through hypnosis",
+                "teaching the client to relax through techniques such as deep breathing",
+                "constructing a hierarchy of feared images",
+                "instructing the client to picture each fearful image while maintaining a relaxed state"
+            ],
+            [
+                "Proactive, Groups, Under-represented, Increase",
+                "Passive, Groups, Under-represented, Retain",
+                "Proactive, Individuals, Represented, Increase",
+                "Passive, Individuals, Represented, Retain"
+            ],
+            [
+                "All the members of the arbitral tribunal are appointed by the parties",
+                "All the members of the arbitral tribunal are appointed by the parties",
+                "All the members of the arbitral tribunal are appointed by an impartial third party, such as the president of the ICJ",
+                "All the members of the arbitral tribunal are appointed by the parties from a restricted list of arbitrators"
+            ],
+            [
+                "sagittal crest.",
+                "supraorbital torus.",
+                "maxilla.",
+                "occipital bone."
+            ]
+        ],
+        "mmlu_answer": [
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "original_prediction": "I couldn't find any information on a journalist named John Mayne. It's possible that you may have misspelled the name or are referring to someone not widely known or documented in public records. If you could provide more context or details, I'd be happy to try and help further. Alternatively, if you're looking for information about a specific journalist with a similar name, please provide the correct name so I can research their background and experience in journalism.",
+        "para_prediction": "I couldn't find any notable journalist named John Mayne in my database. It's possible that you might be referring to a specific individual, but without more context or details, it's difficult to provide accurate information.\n\nHowever, if you could provide more context or specify which John Mayne you are referring to (e.g., his field of work, nationality, time period, etc.), I would be happy to help you research and provide more detailed information about his journalism background and experience.",
+        "sub_pred": [
+            "I couldn't find specific information on how long John Mayne has been working as a journalist. Could you please provide more context or details about John Mayne, such as his full name or the field he works in? This would help me provide a more accurate answer.",
+            "John Mayne is a British journalist and author who has contributed to various publications. Some of the notable ones include:\n\n1. The Guardian - A prominent British national newspaper.\n2. The Independent - Another well-known British national newspaper.\n3. The Spectator - A British weekly magazine known for its conservative viewpoint.\n\nMayne has also written for other publications such as:\n\n4. The Times - One of the oldest and most respected English-language newspapers in the world.\n5. The Daily Telegraph - A leading British national daily newspaper.\n6. The Sunday Times - A British weekly newspaper.\n7. The Observer - A British weekly newspaper published by The Guardian.\n\nThese are some of the major publications where John Mayne has contributed articles, opinion pieces, and reviews over his career.",
+            "I couldn't find any specific interview between John Mayne and The Huffington Post that I can confirm. John Mayne is a British architect, urban designer, and educator known for his work on sustainable architecture and urban planning. However, without more context or details about the interview you're referring to, I cannot provide information on what was discussed.\n\nIf you have more specific details about the interview, such as the date, time period, or topics covered, I would be happy to help you find more accurate information.",
+            "I couldn't find specific information about John Mayne's educational background. The name \"John Mayne\" could refer to multiple individuals, and without more context or specifying which John Mayne you're referring to (e.g., a historical figure, an architect, a politician, etc.), it's difficult to provide accurate details.\n\nIf you have more context or can provide additional details about the John Mayne you're interested in, I'd be happy to try and help you find the information you need.",
+            "John Mayne is a highly respected and experienced journalist, editor, and media executive. His value to any newsroom can be attributed to several key factors:\n\n1. **Leadership and Management Skills**: Mayne has extensive experience in managing large news organizations, including the Daily Mail and Sunday Mail in Australia. His ability to lead and inspire teams, as well as his strategic vision for newsrooms, make him an invaluable asset.\n\n2. **Journalistic Expertise**: With a career spanning decades, Mayne has deep knowledge of journalism practices, ethics, and trends. This expertise helps ensure that newsrooms maintain high standards of reporting and storytelling.\n\n3. **Digital Transformation**: In today's rapidly evolving media landscape, Mayne's experience with digital transformation is crucial. He understands how to leverage technology to enhance news delivery, engage audiences, and increase readership or viewership.\n\n4. **Diverse Experience**: Mayne has worked across various media platforms, from print to digital. This diverse background allows him to bring a well-rounded perspective to newsroom operations and decision-making.\n\n5. **Crisis Management**: His experience handling major news events and crises can be invaluable in ensuring that newsrooms are prepared for unexpected situations and can respond effectively.\n\n6. **Innovation and Creativity**: Mayne's track record of innovation in media suggests he can help newsrooms stay ahead of the curve by introducing new ideas and approaches to content creation and distribution.\n\n7. **Industry Connections**: As someone who has worked at the highest levels of the media industry, Mayne likely has strong networks and connections that can benefit newsrooms through partnerships, collaborations, and access to resources.\n\n8. **Financial Acumen**: Managing large news organizations requires a keen understanding of financial matters. Mayne's experience in this area can help newsrooms operate more efficiently and sustainably.\n\nOverall, John Mayne's combination of leadership, journalistic expertise, and adaptability makes him a valuable asset to any newsroom looking to thrive in today's competitive media environment."
+        ]
+    },
+    {
+        "id": 2,
+        "question": "<|im_start|>user\nWhat were some of the key accomplishments and positions held by Henry Feilden during his political career?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat were the significant achievements and roles that Henry Feilden had in his political journey?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Henry Feilden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Feilden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Feilden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.",
+        "sub_question": [
+            "<|im_start|>user\nWhat was Henry Feilden known for in the political scene?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nAt what age was Henry Feilden elected to the local council?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat positions did Henry Feilden hold in his political career?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat was Henry Feilden's dedication evident in?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "His involvement in various political campaigns and his strong stance on social justice issues.",
+            "25.",
+            "Member of parliament and key advisor to several high-ranking government officials.",
+            "His tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals."
+        ],
+        "mmlu_questions": [
+            "What is the least possible positive integer-value of $n$ such that $\\sqrt{18\\cdot n \\cdot 34}$ is an integer?",
+            "Identify the conclusion of the following argument. Utilitarian theory is embarrassed by the possibility of utility monsters. A utility monster gets enormous gains in utility, greater than the utility lost by the sacrifices of others. The sacrifices of even large numbers of other people are outweighed by the gains of the utility monster. The theory seems to require that we all be sacrificed in the monste's maw in order to increase total utility. (Robert Nozick, Anarchy, State, and Utopia)",
+            "A particle's kinetic energy is changing at a rate of –6.0 J/s when its speed is 3.0 m/s. What is the magnitude of the force on the particle at this moment?",
+            "Buffer-overflow may remain as a bug in apps if __________ are not done fully.",
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I always gave extra credit on exams to those who had the right answers. Scenario 2 | I ignited the fireworks in the office building."
+        ],
+        "mmlu_choices": [
+            [
+                "15",
+                "10",
+                "17",
+                "34"
+            ],
+            [
+                "Utilitarian theory is embarrassed by the possibility of utility monsters.",
+                "A utility monster gets enormous gains in utility.",
+                "A utility monster gets gains in utility greater than the utility lost by the sacrifices of others.",
+                "The sacrifices of even large numbers of other people are outweighed by the gains of the utility monster."
+            ],
+            [
+                "0.5 N",
+                "2.0 N",
+                "4.5 N",
+                "9.0 N"
+            ],
+            [
+                "boundary hacks",
+                "memory checks",
+                "boundary checks",
+                "buffer checks"
+            ],
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ]
+        ],
+        "mmlu_answer": [
+            2,
+            0,
+            1,
+            2,
+            2
+        ],
+        "original_prediction": "Henry Feilden was a British Liberal Party politician who served in various capacities during the late 19th and early 20th centuries. Some of his key accomplishments and positions include:\n\n1. **Member of Parliament (MP)**: Feilden was elected as an MP for the constituency of Oldham in 1885, representing the Liberal Party. He held this position until 1906.\n\n2. **Chancellor of the Exchequer**: In 1905, he served as Chancellor of the Exchequer under Prime Minister H. H. Asquith. This was a significant position within the government, responsible for managing the national finances.\n\n3. **President of the Local Government Board**: From 1905 to 1906, Feilden also held the position of President of the Local Government Board, which was responsible for local government administration in England and Wales.\n\n4. **Committee Work**: Throughout his career, Feilden was involved in various parliamentary committees, including those dealing with education, public health, and social reform. His work on these committees contributed to important legislative changes during his time in office.\n\n5. **Supporter of Social Reforms**: Feilden was known for his support of social reforms, particularly those aimed at improving working conditions and providing better healthcare for the working class. He played a role in advancing legislation related to these issues.\n\n6. **Education Reforms**: He was involved in efforts to improve the education system, advocating for better funding and standards in schools.\n\n7. **Opposition to Tariff Reform**: Feilden was a vocal opponent of tariff reform, which was a contentious issue in British politics at the time. He believed that free trade was beneficial for the economy.\n\nThese accomplishments and positions highlight Feilden's significant contributions to British politics and his focus on social and economic reforms during his tenure as a Liberal MP.",
+        "para_prediction": "Henry Feilden was a prominent British Liberal politician who served as a Member of Parliament (MP) for several constituencies from 1874 to 1906. His political career spanned three decades, during which he played significant roles and achieved notable accomplishments. Here are some of his key achievements and roles:\n\n### Early Political Career:\n- **1874**: Feilden was first elected to Parliament as the Liberal candidate for the constituency of Burnley.\n- **1885**: He became the MP for the newly created constituency of Burnley and Colne Valley.\n\n### Legislative Contributions:\n- **Representation Act 1885**: Feilden was instrumental in the passage of this act, which reformed the electoral system by introducing more equal representation and reducing the influence of corrupt practices such as \"rotten boroughs\" and \"pocket boroughs.\"\n- **Education**: He supported educational reforms, including the Elementary Education Act 1870, which aimed to improve access to education for children in England and Wales.\n\n### Party Leadership:\n- **Liberal Party Whip**: Feilden served as the Liberal Party Whip in the House of Commons, playing a crucial role in organizing and supporting the party's legislative agenda.\n- **Deputy Leader**: In 1892, he was appointed as the Deputy Leader of the Liberal Party, a position that involved coordinating the party's parliamentary activities and supporting the leadership in various capacities.\n\n### Foreign Policy and Colonial Affairs:\n- **Colonial Office**: Feilden held the position of Under-Secretary of State for the Colonies, where he worked on colonial affairs and helped shape British policy towards its overseas territories.\n- **Foreign Secretary**: In 1895, he briefly served as the Secretary of State for Foreign Affairs, a role that involved managing international relations and negotiating treaties.\n\n### Social Reforms:\n- **Trade Union Legislation**: Feilden supported trade union legislation, advocating for better rights and conditions for workers.\n- **Public Health**: He was a strong advocate for public health measures, supporting bills that aimed to improve sanitation and reduce the spread of diseases.\n\n### Later Career:\n- **Conservative Party**: By the end of his political career, Feilden had become disillusioned with the Liberal Party and joined the Conservative Party in 1906. This move reflected broader shifts within British politics at the time.\n\n### Legacy:\nFeilden's contributions to electoral reform, education, and social welfare laid important groundwork for future legislative changes. His roles in party leadership and",
+        "sub_pred": [
+            "Henry Feilden (1758-1836) was a prominent English solicitor and Whig politician who played an important role in the political scene of his time. He is best known for his work as a legal advisor to the Duke of Wellington, particularly during the Napoleonic Wars, and for his involvement in the Reform Act of 1832.\n\nKey points about Henry Feilden's political contributions:\n\n1. Legal advisor: Feilden served as a legal advisor to the Duke of Wellington, providing counsel on various matters related to the government and military during the Napoleonic Wars.\n\n2. Reform Act of 1832: He was a key figure in the passage of the Reform Act, which aimed to reform the British electoral system by redistributing seats and increasing representation for urban areas and reducing representation for rural areas with declining populations.\n\n3. Member of Parliament: Feilden was elected as a Member of Parliament (MP) for the constituency of Westminster in 1806 and served until 1832.\n\n4. Whig party: He was a member of the Whig party, which was one of the two major political parties in Britain during the early 19th century.\n\n5. Anti-Corn Law League: Feilden was also involved with the Anti-Corn Law League, which advocated for the repeal of the Corn Laws, which protected domestic grain producers from foreign competition.\n\nFeilden's work as a legal advisor and his involvement in significant political reforms, particularly the Reform Act of 1832, have made him an important figure in British political history.",
+            "Henry Feilden was elected to Burnley Borough Council at the age of 21 in 1874. He was first elected as a Liberal candidate for Burnley North and went on to serve as a councillor for 50 years, becoming the longest-serving councillor in the history of Burnley Borough Council.",
+            "Henry Feilden held several important positions in his political career. He was a Member of Parliament (MP) for Burnley from 1865 to 1880 and then again from 1885 until his death in 1892. During his time as an MP, he served in various government roles:\n\n1. **Chancellor of the Exchequer**: Feilden held this position twice - first from 1887 to 1889 and again from 1891 to 1892.\n\n2. **First Lord of the Admiralty**: He also served in this role from 1887 to 1889.\n\n3. **President of the Local Government Board**: Feilden held this position from 1889 to 1891.\n\n4. **Postmaster General**: He served in this capacity from 1891 to 1892.\n\nFeilden was a prominent figure in British politics during the late 19th century, particularly known for his work in financial and administrative matters.",
+            "Henry Feilden's dedication was most evident in his work as a British barrister and legal reformer during the 19th century. He is particularly known for his efforts in criminal law reform, especially in the area of evidence and procedure.\n\nFeilden dedicated much of his career to improving the legal system, particularly in how evidence was handled and presented in court. His most notable contribution was the Feilding Act of 1865 (also known as the Criminal Evidence Act 1865), which significantly changed the rules regarding the admissibility of evidence in criminal trials in England and Wales.\n\nThis act allowed for the admission of evidence of a defendant's good character and provided for the cross-examination of expert witnesses. It was a significant step towards modernizing the legal system and ensuring fairer trials.\n\nFeilden's dedication to these reforms was driven by his belief in the importance of justice and fairness within the legal process. His work laid important groundwork for future legal reforms and helped shape the modern criminal justice system in Britain."
+        ]
+    },
+    {
+        "id": 3,
+        "question": "<|im_start|>user\nWhat are Kathy Saltzman's notable achievements in the field of composition and what makes her a leading figure in contemporary classical music?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat distinguishes Kathy Saltzman in the field of composition and what makes her a prominent figure in contemporary classical music?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Kathy Saltzman is a highly accomplished composer, having written numerous pieces for orchestras and chamber ensembles. Her work has been performed by some of the most prestigious musical groups in the world, including the New York Philharmonic and the London Symphony Orchestra. In addition to her composing work, Saltzman is also a sought-after lecturer and teacher, having given talks and masterclasses at universities and music schools across the globe. Her expertise in the field of composition is widely recognized, and she is considered one of the leading figures in contemporary classical music.",
+        "sub_question": [
+            "<|im_start|>user\nWhat type of music does Kathy Saltzman compose?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhich renowned musical groups have performed Kathy Saltzman's work?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nBesides composing, what other roles does Kathy Saltzman have in the music industry?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhere has Kathy Saltzman given talks and masterclasses?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nHow is Kathy Saltzman regarded in the field of composition?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Orchestral and chamber music.",
+            "The New York Philharmonic and the London Symphony Orchestra.",
+            "Lecturer and teacher.",
+            "Universities and music schools across the globe.",
+            "She is considered one of the leading figures in contemporary classical music."
+        ],
+        "mmlu_questions": [
+            "This question refers to the following information.\nOne of the rights which the freeman has always guarded with most jealous care is that of enjoying the rewards of his own industry. Realizing that the power to tax is the power to destroy and that the power to take a certain amount of property or of income is only another way of saying that for a certain proportion of his time a citizen must work for the government, the authority to impose a tax on the people has been most carefully guarded.… A government which lays taxes on the people not required by urgent necessity and sound public policy is not a protector of liberty, but an instrument of tyranny. It condemns the citizen to tyranny. One of the first signs of the breaking down of free government is a disregard by the taxing power of the right of the people to their own property.… Unless the people can enjoy that reasonable security in the possession of their property, which is guaranteed by the Constitution, against unreasonable taxation, freedom is at an end.… With us economy is imperative. It is a full test of our national character.… It is always the people who toil that pay.\n—Calvin Coolidge, \"Economy in the Interest of All,\" June 30, 1924\nWhich of the following presidents would be most likely to share Coolidge's sentiments?",
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I said my stomach hurt because I felt like leaving work early. Scenario 2 | As my parents were sleeping, i locked their gun safe.",
+            "The U.S. economy currently suffers a recessionary gap and a budget deficit exists. If the government wishes to fix the recession which of the following choices best describes the appropriate fiscal policy the impact on the market for loanable funds the interest rate and the market for the U.S. dollar? FISCAL POLICY     LOANABLE FUNDS     INTEREST RATE     MARKET FOR $",
+            "John has five children. What is the probability that at least half of them are girls? (We can assume a boy is equally likely to be born as is a girl, and vice-versa.)",
+            "The frontal lobe of the brain's cortex is responsible for which of the following?"
+        ],
+        "mmlu_choices": [
+            [
+                "Franklin D. Roosevelt",
+                "Lyndon B. Johnson",
+                "Ronald Reagan",
+                "Barack Obama"
+            ],
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ],
+            [
+                "Tax increase     Demand rises     Falling     Demand falls",
+                "Tax cut     Supply rises     rising     Demand rises",
+                "Tax cut     Demand rises     rising     Demand rises",
+                "Tax increase     Supply falls     Falling     Demand rises"
+            ],
+            [
+                "\\frac{1}{2}",
+                "\\frac{1}{4}",
+                "\\frac{1}{8}",
+                "\\frac{3}{5}"
+            ],
+            [
+                "The sleep/wake cycle.",
+                "The ability to draw shapes.",
+                "Understanding others' speech.",
+                "Visual perception."
+            ]
+        ],
+        "mmlu_answer": [
+            2,
+            1,
+            2,
+            0,
+            1
+        ],
+        "original_prediction": "Kathy Saltzman is an accomplished American composer known for her innovative and expressive works that often incorporate elements of jazz, world music, and electronic sounds. While I couldn't find extensive information on her specific achievements, here are some key points that highlight her contributions to contemporary classical music:\n\n1. **Innovative Techniques**: Saltzman is recognized for her use of unconventional techniques and instruments, including the incorporation of found objects and electronic elements into her compositions. This approach has helped her create unique sonic landscapes that push the boundaries of traditional classical music.\n\n2. **Collaborations**: She has collaborated with various artists from different musical backgrounds, which has enriched her compositional style and broadened her audience. These collaborations have also contributed to her reputation as a versatile and open-minded composer.\n\n3. **Educational Impact**: As a professor at the University of North Texas, Saltzman has influenced many young composers through her teaching and mentorship. Her ability to inspire and guide students has made her a respected figure in the academic world of music.\n\n4. **Recognition and Awards**: While specific awards may not be widely documented, her work has likely been recognized by various organizations and institutions within the music community. Recognition from peers and audiences is a significant indicator of a composer's standing in the field.\n\n5. **Diverse Repertoire**: Saltzman's repertoire spans various genres and forms, from orchestral works to chamber pieces and solo compositions. This diversity demonstrates her adaptability and willingness to explore different musical territories.\n\n6. **Cultural Fusion**: Her compositions often blend elements from different cultures and musical traditions, reflecting her interest in cross-cultural dialogue and fusion. This aspect of her work contributes to the richness and complexity of contemporary classical music.\n\nWhile more detailed information about her specific achievements might be available through academic publications or interviews, these points provide a general overview of why Kathy Saltzman is considered a notable figure in contemporary classical music.",
+        "para_prediction": "Kathy Saltzman is a prominent figure in contemporary classical music, known for her innovative approach to composition and her ability to blend diverse musical influences. Here are some key aspects that distinguish her work:\n\n1. **Innovative Techniques**: Saltzman is known for her use of unconventional techniques and instruments. She often incorporates found objects, electronic elements, and extended instrumental techniques into her compositions, pushing the boundaries of traditional classical music.\n\n2. **Collaborations**: She frequently collaborates with other artists from various disciplines, including visual artists, dancers, and multimedia creators. This interdisciplinary approach enriches her compositions and broadens their impact.\n\n3. **Diverse Musical Influences**: Saltzman's work draws from a wide range of musical traditions, including jazz, world music, and popular genres. This eclectic mix allows her to create unique and engaging compositions that resonate with a broad audience.\n\n4. **Emotional Depth**: Despite her experimental nature, Saltzman's music often conveys deep emotional content. Her ability to evoke powerful emotions through sound and structure sets her apart as a composer who can move listeners on a profound level.\n\n5. **Educational Contributions**: As an educator, Saltzman has played a significant role in shaping the next generation of composers and performers. Her teaching methods and mentorship have influenced many young musicians and composers.\n\n6. **Recognition and Awards**: Saltzman has received numerous awards and accolades for her work, including grants and commissions from prestigious organizations. These recognitions highlight her contributions to the field of contemporary classical music.\n\n7. **Pioneering Spirit**: Her willingness to explore new sonic territories and challenge conventional norms positions her as a pioneer in the contemporary classical music scene. This spirit of innovation continues to inspire both her peers and younger composers.\n\nOverall, Kathy Saltzman's distinctive style, collaborative spirit, and commitment to pushing the boundaries of classical music make her a notable and influential figure in the contemporary classical music world.",
+        "sub_pred": [
+            "I couldn't find any specific information about a composer named Kathy Saltzman. It's possible you may be thinking of a different person or there might be some confusion with names. If you could provide more details or context about this composer, I'd be happy to help you find the information you're looking for.",
+            "Kathy Saltzman is a composer known for her work in musical theater and film. While I couldn't find specific information about which renowned musical groups have performed her work, she has composed music for various productions. Some of her notable works include:\n\n1. **\"The Secret Garden\"** - A musical adaptation of the novel by Frances Hodgson Burnett. This production has been performed by several professional and community theater groups around the world.\n\n2. **\"The Sound of Music\"** - Another well-known musical that has been performed by numerous theater companies globally.\n\n3. **\"The Wiz\"** - A musical adaptation of the 1975 film \"The Wiz.\" This production has also been staged by various theater groups.\n\n4. **\"Joseph and the Amazing Technicolor Dreamcoat\"** - A popular musical by Andrew Lloyd Webber, which has been performed by many theater companies.\n\nWhile these are some of the more prominent productions she has contributed to, it's important to note that her work may also be performed by smaller, local theater groups or educational institutions. For the most accurate and up-to-date information on performances of her specific compositions, you might want to check with theater databases or local theater organizations.",
+            "Kathy Saltzman is known for her multifaceted role in the music industry beyond just composing. She has been involved in various capacities, including:\n\n1. **Music Publisher**: Kathy Saltzman serves as the President of Saltzman Music, a music publishing company that represents and manages the rights to a wide range of musical works.\n\n2. **Songwriter**: In addition to composing, she also writes songs, often collaborating with other artists and songwriters.\n\n3. **Music Licensing**: She works on licensing her compositions for use in film, television, commercials, and other media.\n\n4. **Music Education**: Kathy is passionate about music education and may be involved in workshops, seminars, or educational programs aimed at nurturing young talent.\n\n5. **Industry Mentor**: She likely mentors aspiring composers and songwriters, sharing her experience and knowledge in the industry.\n\n6. **Event Organizer**: She might organize or participate in music events, such as concerts, festivals, or industry conferences.\n\n7. **Record Label Executive**: While less common, she could potentially hold a position in a record label, overseeing the release and promotion of artists and their music.\n\n8. **Producer**: She may also produce music, working closely with artists to shape their sound and production.\n\nThese roles highlight her comprehensive involvement in the music industry, from creation to commercialization and beyond.",
+            "I couldn't find specific information about where Kathy Saltzman has given talks and masterclasses. Kathy Saltzman is likely a name associated with music, but without more context or details, it's difficult to pinpoint her exact background or the venues where she may have conducted such events. If you could provide more context about Kathy Saltzman (such as if she's a musician, educator, or in another field), I might be able to give you a more accurate answer.",
+            "Kathy Saltzman is an American composer who has gained recognition for her work in various musical genres, including classical, film, and theater. While she may not be as widely known as some other contemporary composers, she has established a reputation within certain circles for her innovative approach to composition.\n\nSaltzman's compositions often blend traditional orchestral techniques with electronic elements, creating a unique sound that reflects her background in both classical music and electronic music production. She has composed works for symphony orchestras, chamber ensembles, and even for use in film scores.\n\nSome key points regarding Kathy Saltzman's standing in the field of composition include:\n\n1. **Versatility**: Her ability to work across different mediums (classical, film, theater) demonstrates versatility, which is highly valued in the composition community.\n\n2. **Innovative Techniques**: Saltzman's incorporation of electronic elements into her classical compositions sets her apart from many of her contemporaries and showcases her willingness to experiment with new sounds and technologies.\n\n3. **Educational Contributions**: As an educator, she has likely influenced the next generation of composers through her teaching at institutions such as the University of California, San Diego, where she has been on the faculty since 1985.\n\n4. **Recognition**: While specific awards or major recognitions might not be widely publicized, her inclusion in various concert programs and her performances by notable orchestras suggest that she is respected within the field.\n\nOverall, while Kathy Saltzman may not have achieved mainstream fame, she is considered a respected figure in the contemporary classical music scene, particularly for her innovative approach to blending traditional and modern compositional techniques."
+        ]
+    },
+    {
+        "id": 4,
+        "question": "<|im_start|>user\nWhat are some of the significant contributions made by Leona Detiège in the field of artificial intelligence?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat notable advancements has Leona Detiège made in the realm of artificial intelligence?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Leona Detiège is a computer scientist who has made significant contributions to the field of artificial intelligence. She has published numerous research papers on machine learning and natural language processing, and has been invited to speak at several international conferences on these topics. In addition, she has worked as a software engineer at several prominent tech companies, including Google and Microsoft, where she helped develop cutting-edge algorithms for speech recognition and image processing. Her expertise in computer science has earned her numerous awards and accolades, including the prestigious Turing Award in 2018.",
+        "sub_question": [
+            "<|im_start|>user\nWhat field has Leona Detiège made significant contributions to?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat topics has Leona Detiège published research papers on?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhere has Leona Detiège worked as a software engineer?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat kind of algorithms did Leona Detiège help develop?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat award did Leona Detiège receive in 2018?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Artificial intelligence.",
+            "Machine learning and natural language processing.",
+            "Google and Microsoft.",
+            "Algorithms for speech recognition and image processing.",
+            "The Turing Award."
+        ],
+        "mmlu_questions": [
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I went to the farm to see the chickens. Scenario 2 | I was playing cartoon movies in front of my kids.",
+            "Marginal cost (MC) is equal to average variable cost (AVC) and average total cost (ATC) when:",
+            " Carens accepts that it is possible for the sudden opening of one country's borders to do more harm than good from a liberal egalitarian perspective. However, he argues that",
+            "Why are some specific indices of iron status (such as serum ferritin or transferrin receptors) generally considered to be more reliable indices of iron status, than blood haemoglobin levels are?\n",
+            "The method of loci is a memory aid that employs which of the following?"
+        ],
+        "mmlu_choices": [
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ],
+            [
+                "marginal cost (MC) intersects AVC and ATC at their maximum points.",
+                "AVC and ATC intersect MC at its maximum point.",
+                "MC intersects AVC and ATC at their minimum points.",
+                "AVC and ATC intersect MC at its minimum point."
+            ],
+            [
+                "in practice, feasible policy options will not entail major costs to current citizens.",
+                "liberal egalitarianism is false, and so this possibility is irrelevant.",
+                "sometimes you have to do more harm than good in the short term to do more good in the long term.",
+                "all of the above"
+            ],
+            [
+                "Because they respond more rapidly to changes in iron levels in the diet.",
+                "Because blood haemoglobin levels can also respond to a variety of other factors and insults, such as lead poisoning, chronic disease, etc.",
+                "Because the specific iron indices can be measured more accurately and easily.",
+                "Because haemoglobin levels vary with subject age, and between the sexes."
+            ],
+            [
+                "Semantic encoding",
+                "Visual imagery",
+                "Auditory cues",
+                "Echoic memory"
+            ]
+        ],
+        "mmlu_answer": [
+            3,
+            2,
+            0,
+            1,
+            1
+        ],
+        "original_prediction": "Leona Detiège is not a widely recognized figure in the field of artificial intelligence (AI). It's possible that there might be a typo or confusion with another name. If you could provide more context or verify the name, I would be happy to help you find information about her specific contributions.\n\nHowever, if you're interested in notable contributions by women in AI, here are some significant figures and their contributions:\n\n1. **Fei-Fei Li** - She is known for her work on deep learning and computer vision. Fei-Fei Li co-founded the Stanford Artificial Intelligence Laboratory (SAIL) and the Stanford Vision and Learning Lab (VLL), and she was the founding director of the Stanford Human-Centered AI Institute. She has also been instrumental in promoting diversity and inclusion in AI through initiatives like ImageNet and AI4ALL.\n\n2. **Yoshua Bengio** - While not exclusively a woman, his work has significantly influenced the field of deep learning. He is one of the pioneers in this area and has contributed to the development of neural networks and deep learning techniques.\n\n3. **Karen Hao** - She is a journalist who covers AI and technology for MIT Technology Review. Her work includes investigating ethical issues in AI and highlighting the impact of AI on society.\n\n4. **Daphne Koller** - She is a computer scientist and entrepreneur who has made significant contributions to machine learning and probabilistic graphical models. She co-founded Coursera, an online education platform, and has also worked on applications of AI in healthcare.\n\n5. **Julie Shah** - She is a professor at MIT and an expert in human-robot interaction. Her research focuses on developing robots that can assist humans in complex tasks, such as manufacturing and surgery.\n\nIf you have a specific person in mind or if you meant a different name, please provide more details so I can give you accurate information.",
+        "para_prediction": "I couldn't find any specific information about a person named Leona Detiège making notable advancements in the realm of artificial intelligence. It's possible there may be a typo or the individual might not be widely recognized in this field. If you have more details or context, I'd be happy to help further!",
+        "sub_pred": [
+            "Leona Detiège is known for her significant contributions to the field of chemistry, specifically in the area of analytical chemistry and spectroscopy. She has made notable advancements in the development and application of spectroscopic techniques for the analysis of complex mixtures and environmental samples. Her work often focuses on improving the sensitivity and accuracy of analytical methods used in various applications, including environmental monitoring and forensic science.",
+            "I couldn't find any information on a specific researcher named \"Leona Detiège\" who has published research papers. It's possible that there might be a typo or the name is not widely recognized in academic circles. Could you please provide more details or check the spelling of the name? If you have a specific field of interest, I can help by providing general information on common research topics within that field.",
+            "I couldn't find any specific information about a person named Leona Detiège working as a software engineer. It's possible that there might be a typo or the individual is not widely known in public sources. If you have more details or context about this person, please provide them and I'll try to assist further.",
+            "I couldn't find any specific information about an individual named Leona Detiège who is known for developing particular algorithms. It's possible that there might be a typo or the person you're referring to is not widely recognized in the field of computer science or algorithm development.\n\nIf you have more context or details about this person, such as their field of work, time period, or any other relevant information, I would be happy to help you research further. Alternatively, if you meant to ask about a different person, please provide the correct name so I can assist you accurately.",
+            "I couldn't find any information about Leona Detiège receiving an award in 2018. It's possible that there might be a typo or the person you're referring to is not well-known or doesn't have a significant public record. Could you please provide more context or verify the name and year?"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "<|im_start|>user\nHow did Herlyn Espinal transition from being a sales representative to becoming a successful businesswoman?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat steps did Herlyn Espinal take to go from being a sales representative to achieving success as a businesswoman?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Herlyn Espinal is a successful businesswoman who has been running her own company for over a decade. She started her career in the business world as a sales representative for a large corporation, but quickly realized that she had a talent for entrepreneurship. In 2008, she founded her own company, which specializes in providing marketing and advertising services to small and medium-sized businesses. Over the years, her company has grown significantly, and she now employs a team of over 50 people. Herlyn is widely recognized as a leader in her industry, and has received numerous awards and accolades for her work. Her success as a businesswoman is a testament to her hard work, dedication, and entrepreneurial spirit.",
+        "sub_question": [
+            "<|im_start|>user\nHow long has Herlyn Espinal been running her own company?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat does Herlyn Espinal's company specialize in?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nHow many people does Herlyn Espinal employ in her company?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat industry is Herlyn Espinal recognized as a leader in?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat qualities contribute to Herlyn Espinal's success as a businesswoman?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "Providing marketing and advertising services to small and medium-sized businesses.",
+            "Over 50 people.",
+            "The business industry.",
+            "Hard work, dedication, and entrepreneurial spirit."
+        ],
+        "mmlu_questions": [
+            "This question refers to the following information.\nWe have, by this perpetual and irrevocable edict, established and proclaimed:\n\"First, that the recollection of everything done be one party or the other … during all the preceding period of troubles, remain obliterated and forgotten, as if no such things had ever happened. …\n\"We ordain that the Catholic Apostolic and Roman religion shall be restored and reestablished in all places and localities of this our kingdom and countries subject to our sway, where the exercise of the same has been interrupted, in order that it may be peaceably and freely exercised, without any trouble or hindrance. …\n\"And in order to leave no occasion for troubles or differences between our subjects, we have permitted, and herewith permit, those of the said religion called Reformed to live and abide in all the cities and places of this our kingdom and countries of our sway, and without being annoyed, molested, or compelled to do anything in the matter of religion contrary to their consciences. …\"\nHenry IV of France, The Edict of Nantes, 1598\nFrom the passage, one may infer that Henry IV",
+            "A defendant and his friend were drinking heavily one night at the friend's house. They both became intoxicated. After several hours, both the friend and the defendant passed out. In the middle of the night, the defendant awoke with a headache. He went down to the kitchen and poured himself another shot of whiskey. The defendant also felt hungry and decided to make himself some eggs. After fixing his snack, he inadvertently forgot to turn off the stove. A gas leak occurred, causing a fire that burned down the house. If the defendant is charged with arson, he will be found",
+            "A 12-ounce soft drink has 41 grams of sugar, which is 14% of the normal daily allowance for sugar. Approximately how many grams of sugar are recommended in the normal diet?",
+            "Which of the following would a researcher need to use to determine if the difference between the mean scores of experimental and control groups was significant?",
+            "Labor productivity and economic growth increase if"
+        ],
+        "mmlu_choices": [
+            [
+                "was banning Protestants from France",
+                "intended for Protestants to be able to live peacefully in his kingdom",
+                "was converting to Catholicism",
+                "was converting to Protestantism"
+            ],
+            [
+                "guilty, because the defendant was reckless.",
+                "guilty, because the defendant was criminally negligent.",
+                "not guilty, because the defendant did not commit a felony.",
+                "not guilty, because arson requires the presence of malice."
+            ],
+            [
+                "5.74",
+                "69",
+                "293",
+                "574"
+            ],
+            [
+                "descriptive statistics",
+                "inferential statistics",
+                "field experiment",
+                "standard deviation"
+            ],
+            [
+                "a nation subsidizes education for all citizens.",
+                "a nation imposes tariffs and quotas on imported goods.",
+                "a nation removes penalties for firms that pollute natural resources.",
+                "a nation ignores societal barriers like discrimination."
+            ]
+        ],
+        "mmlu_answer": [
+            1,
+            3,
+            2,
+            1,
+            0
+        ],
+        "original_prediction": "Herlyn Espinal's journey from a sales representative to a successful businesswoman is an inspiring story of perseverance, innovation, and strategic thinking. While I don't have specific details about her exact path, I can outline some common steps that many individuals take to transition into entrepreneurship:\n\n1. **Building a Strong Foundation**: As a sales representative, Espinal likely developed strong communication skills, a deep understanding of customer needs, and the ability to build relationships. These are crucial skills for any entrepreneur.\n\n2. **Identifying a Niche**: Espinal may have identified a gap in the market or a need that wasn't being adequately addressed by existing businesses. This could be related to her industry experience or personal interests.\n\n3. **Developing a Business Plan**: She would have created a detailed business plan outlining her vision, target market, marketing strategies, financial projections, and operational plans.\n\n4. **Securing Funding**: Espinal might have sought funding through various means such as loans, investors, or crowdfunding. Understanding how to present her business idea effectively was key.\n\n5. **Launching the Business**: With the necessary resources in place, she would have launched her business, possibly starting small and scaling up over time.\n\n6. **Innovating and Adapting**: Successful entrepreneurs often innovate and adapt quickly to changes in the market. Espinal likely stayed informed about industry trends and customer preferences, making adjustments to her business model as needed.\n\n7. **Building a Team**: As her business grew, she would have hired employees or partners who shared her vision and could help scale the business.\n\n8. **Networking and Branding**: Establishing a strong network and building a positive brand image were likely important for gaining credibility and attracting customers.\n\n9. **Continuous Learning**: Espinal probably continued to learn and grow, attending workshops, seminars, and conferences to stay updated on best practices and new opportunities.\n\nWhile these are general steps, the specifics of Herlyn Espinal's journey would depend on her unique experiences and the challenges she faced along the way. If you have more specific information about her background or achievements, I'd be happy to provide more tailored insights!",
+        "para_prediction": "While I don't have specific details about Herlyn Espinal's exact journey, I can provide a general outline of the steps that many individuals take to transition from a sales role to becoming a successful businesswoman. Here are some common steps:\n\n1. **Developing Sales Skills**: As a sales representative, Espinal likely honed her communication, negotiation, and customer service skills. These are crucial for any businesswoman.\n\n2. **Building a Network**: Networking is key in both sales and entrepreneurship. Espinal probably built a strong professional network during her time as a sales rep, which she could leverage when starting her own venture.\n\n3. **Identifying a Niche or Idea**: Espinal would have identified a gap in the market or an opportunity that aligns with her skills and interests. This could be through market research, personal experience, or feedback from her network.\n\n4. **Creating a Business Plan**: Developing a detailed business plan is essential. This includes defining the business model, target market, marketing strategies, financial projections, and operational plans.\n\n5. **Securing Funding**: Depending on the nature of her business, Espinal might have needed to secure funding. This could involve personal savings, loans, grants, or investors.\n\n6. **Launching the Business**: Once all the preparations were in place, Espinal would have launched her business. This involves setting up operations, hiring staff (if necessary), and getting the product or service ready for market.\n\n7. **Marketing and Branding**: Effective marketing and branding are critical for attracting customers. Espinal would have developed a marketing strategy that includes digital marketing, social media, traditional advertising, and public relations.\n\n8. **Customer Service and Feedback**: Providing excellent customer service and actively seeking feedback helps build a loyal customer base and identify areas for improvement.\n\n9. **Scaling the Business**: As the business grows, Espinal would have focused on scaling operations, expanding into new markets, and possibly diversifying products or services.\n\n10. **Continuous Learning and Adaptation**: The business world is constantly evolving. Espinal would have continued to learn about industry trends, adapt to changes, and stay ahead of the competition.\n\nIf you have more specific information about Herlyn Espinal's journey, such as particular challenges she faced or unique strategies she employed, I could provide more tailored insights.",
+        "sub_pred": [
+            "I'm sorry, but I couldn't find any information on a person named Herlyn Espinal running her own company. It's possible that you may have misspelled the name or the details might not be widely available in public records. If you could provide more context or details about this individual or their company, I would be happy to try and assist further.",
+            "I couldn't find specific information about a company owned or operated by Herlyn Espinal. Herlyn Espinal is known for her work as a beauty influencer and entrepreneur, but without more context about which company you're referring to, I can't provide accurate details about its specialization. If you have more information about the company or a specific business venture associated with Herlyn Espinal, please provide that so I can assist you better.",
+            "I'm sorry, but I don't have specific information about the number of employees at Herlyn Espinal's company. Without access to current and detailed internal records of the company, it would be inaccurate for me to provide an exact number. If you need this information, you might want to check the company's official website, annual reports, or contact the company directly for the most accurate and up-to-date details.",
+            "Herlyn Espinal is recognized as a leader in the beauty and cosmetics industry. She is known for her work as a makeup artist, educator, and entrepreneur. Espinal has gained significant recognition for her contributions to the beauty industry through her successful career as a makeup artist, her work with various brands, and her own makeup line. She is also known for her philanthropic efforts and advocacy for diversity and inclusion in the beauty industry.",
+            "While I don't have specific information about Herlyn Espinal, based on common traits of successful businesswomen, we can infer several qualities that likely contribute to her success:\n\n1. **Visionary Thinking**: Successful businesswomen often have a clear vision for their goals and the future direction of their businesses.\n\n2. **Resilience**: Running a business involves facing challenges and setbacks. Resilient individuals are better equipped to overcome obstacles and keep moving forward.\n\n3. **Leadership Skills**: Effective leadership is crucial in guiding teams towards achieving business objectives.\n\n4. **Adaptability**: The ability to adapt to changing market conditions and consumer preferences is vital in today’s fast-paced business environment.\n\n5. **Networking**: Building and maintaining strong professional relationships can open doors to new opportunities and partnerships.\n\n6. **Strategic Planning**: Successful businesswomen often excel at planning and executing strategies to achieve long-term goals.\n\n7. **Financial Acumen**: Understanding financial management and making sound financial decisions is critical for the sustainability of any business.\n\n8. **Customer Focus**: Prioritizing customer satisfaction and understanding their needs can lead to loyal customers and repeat business.\n\n9. **Innovation**: Being innovative and finding new ways to improve products or services can give a business a competitive edge.\n\n10. **Time Management**: Efficiently managing time and prioritizing tasks can help in maximizing productivity and meeting deadlines.\n\nIf you have more specific details about Herlyn Espinal or her business, I could provide a more tailored analysis."
+        ]
+    },
+    {
+        "id": 6,
+        "question": "<|im_start|>user\nWho does Jacob Kraemer represent in his career as a talent agent in Hollywood?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhich individuals does Jacob Kraemer serve as a talent agent in his Hollywood career?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Jacob Kraemer is a well-known talent agent in Hollywood, representing some of the biggest names in the entertainment industry. His roster of clients includes A-list actresses such as Jennifer Lawrence, Emma Stone, and Margot Robbie. Kraemer has been instrumental in securing high-profile roles for his clients, negotiating lucrative contracts, and helping to shape their careers. His expertise in the industry has made him a sought-after agent, and his reputation for representing top-tier talent has only continued to grow over the years. It's clear that Jacob Kraemer's occupation is indeed actresses, as he has built his career around representing some of the most talented and successful women in Hollywood.",
+        "sub_question": [
+            "<|im_start|>user\nWho are some of the actresses represented by Jacob Kraemer?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat does Jacob Kraemer do in the entertainment industry?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat is Jacob Kraemer's reputation in the industry?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat is Jacob Kraemer's occupation?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Jennifer Lawrence, Emma Stone, and Margot Robbie.",
+            "He is a talent agent.",
+            "He is known for representing top-tier talent.",
+            "Representing actresses in the entertainment industry."
+        ],
+        "mmlu_questions": [
+            "\"According to Hersey and Blanchard's situational leadership model, \"\"employee maturity\"\" is a function of the employee’s:\"",
+            "The Apo-E 2 protein is very prevalent in people who",
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I approached my little cousin at her birthday party and blew up her balloon. Scenario 2 | I didn't go to school because I had a cold.",
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | In my midlife crisis, I built a man cave. Scenario 2 | I handed my brother the toothbrush so he could clean his teeth.",
+            "Which of the following is not a tumour suppressor gene?"
+        ],
+        "mmlu_choices": [
+            [
+                "stage of career development.",
+                "personality.",
+                "skills and willingness to assume responsibility.",
+                "beliefs about the meaning and value of work."
+            ],
+            [
+                "Die young",
+                "Live to be 100 or older",
+                "Have healthy immune systems",
+                "Also have high levels of Apo-E 4"
+            ],
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ],
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ],
+            [
+                "APC",
+                "NF1",
+                "RB1",
+                "RET"
+            ]
+        ],
+        "mmlu_answer": [
+            2,
+            1,
+            3,
+            3,
+            3
+        ],
+        "original_prediction": "In Jacob Kraemer's career as a talent agent in Hollywood, he represents actors, writers, directors, and other entertainment professionals. However, without specific information about which agency he works for or any clients he has represented publicly, it's not possible to name particular individuals or types of clients he specifically represents. Talent agents typically work with a wide range of clients across different genres and mediums within the entertainment industry.",
+        "para_prediction": "I couldn't find specific information on which individuals Jacob Kraemer serves as a talent agent for in his Hollywood career. Jacob Kraemer is indeed a talent agent based in Hollywood, but without more detailed sources or context, I cannot provide a list of his clients. If you have any additional details or specific names you're interested in, please let me know and I'll do my best to assist further!",
+        "sub_pred": [
+            "I couldn't find any information on an agent named Jacob Kraemer or a company by that name that represents actresses. It's possible there may be some confusion with names or details. \n\nIf you have more specific information about this agent or agency, such as their full name, company name, or location, I'd be happy to try researching further. Alternatively, if you're looking for information on a particular actress and their representation, please provide that detail and I'll do my best to assist you.",
+            "I couldn't find any specific information about a person named Jacob Kraemer in the entertainment industry. It's possible that you might be thinking of someone else or there could be limited public information available about this individual. If you have more context or details, I'd be happy to try and help further!",
+            "I couldn't find any notable information about a person named Jacob Kraemer specifically regarding his reputation in a particular industry. It's possible that you might be referring to someone else or there could be a typo in the name. If you can provide more context or specify the industry he is associated with, I would be better able to assist you in finding relevant information.",
+            "I couldn't find any information on a person named Jacob Kraemer and his specific occupation. It's possible that the name is misspelled or the individual is not widely known or publicized. Could you please provide more context or check the spelling of the name?"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "<|im_start|>user\nWhat were some of the most iconic silent movies produced by Fred C. Newmeyer?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhich silent movies produced by Fred C. Newmeyer are considered iconic?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Fred C. Newmeyer was a prominent figure in the early days of Hollywood, known for his work as a producer on a number of successful films. In fact, he was responsible for producing some of the most iconic movies of the silent era, including \"Safety Last!\" and \"Girl Shy.\" Newmeyer's talent for producing was widely recognized by his peers, and he was often sought out by other filmmakers for his expertise. His contributions to the film industry helped to shape the course of cinema history, and his legacy continues to be felt to this day.",
+        "sub_question": [
+            "<|im_start|>user\nWhat was Fred C. Newmeyer known for in Hollywood?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhich movies did Fred C. Newmeyer produce during the silent era?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nHow was Fred C. Newmeyer's talent as a producer perceived by his peers?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat impact did Fred C. Newmeyer have on the film industry?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "His work as a producer.",
+            "\"Safety Last!\" and \"Girl Shy.\"",
+            "It was widely recognized.",
+            "He helped shape the course of cinema history."
+        ],
+        "mmlu_questions": [
+            "At a no-reserve auction, the auctioneer put up a painting that was unsigned and apparently quite old. A woman made the highest bid, which was $100, and the auctioneer slammed the gavel down, completing the transaction. Before the day's auction ended, an art historian told the auctioneer in private during a break that the piece was an original by Claude Monet, worth about $1 million. The auctioneer quickly told the successful bidder that the amount was rejected by the seller and that the piece would be withdrawn from the sale that day. The woman sued the auctioneer, claiming that there was a binding contract and requesting specific performance. Based strictly on the rules of offer and acceptance, is the auctioneer in danger of losing the painting to the successful bidder and, if so, why?",
+            "When water evaporates from the surface of a pond, what happens to the remaining liquid water?",
+            "According to Keynesian theory a decrease in the money supply would",
+            "This question refers to the following information.\nThe text below is the government proclamation.\nOn the basis of the above-mentioned new arrangements, the serfs will receive in time the full rights of free rural inhabitants.\nThe nobles, while retaining their property rights to all the lands belonging to them, grant the peasants perpetual use of their household plots in return for a specified obligation[; . . . the nobles] grant them a portion of arable land fixed by the said arrangements as well as other property. . . . While enjoying these land allotments, the peasants are obliged, in return, to fulfill obligations to the noblemen fixed by the same arrangements. In this status, which is temporary, the peasants are temporarily bound. . . .\n[T]hey are granted the right to purchase their household plots, and, with the consent of the nobles, they may acquire in full ownership the arable lands and other properties which are allotted them for permanent use. Following such acquisition of full ownership of land, the peasants will be freed from their obligations to the nobles for the land thus purchased and will become free peasant landowners.\nWE have deemed it advisable:\n3. To organize Peace Offices on the estates of the nobles, leaving the village communes as they are, and to open cantonal offices in the large villages and unite small village communes.\n4. To formulate, verify, and confirm in each village commune or estate a charter which will specify, on the basis of local conditions, the amount of land allotted to the peasants for permanent use, and the scope of their obligations to the nobleman for the land.\n6. Until that time, peasants and household serfs must be obedient towards their nobles, and scrupulously fulfill their former obligations.\n7. The nobles will continue to keep order on their estates, with the right of jurisdiction and of police, until the organization of cantons and of cantonal courts.\n—Alexander II, \"The Abolition of Serfdom in Russia,\" Manifesto of February 19, 1861\nWhich of the following best articulates the new conditions for the recently emancipated serfs of Russia as stated in the above passage?",
+            "Which of the following CANNOT limit the influence of the federal courts?"
+        ],
+        "mmlu_choices": [
+            [
+                "No, the auctioneer can always reject an offer made by a bidder at a public auction sale.",
+                "No, the auctioneer is the offeree at a no-reserve auction and, as such, the offeree has the absolute power to reject the offer if it is not accepted by the owner.",
+                "Yes, in a no-reserve auction there is a binding contract based on the highest amount offered by the winning bidder.",
+                "Yes, in a no-reserve auction there is a binding contract as soon as the bidding starts, with each bid being a new binding contract."
+            ],
+            [
+                "The surface water cools.",
+                "The surface water warms.",
+                "The surface water temperature remains unchanged.",
+                "The pH of the remaining water decreases."
+            ],
+            [
+                "lower interest rates which would encourage borrowing and therefore increase spending.",
+                "raise interest rates which would discourage borrowing and therefore increase spending.",
+                "raise interest rates which would discourage borrowing and therefore reduce spending.",
+                "lower interest rates which would discourage borrowing and therefore reduce spending."
+            ],
+            [
+                "The tsar's manifesto allowed for a heterogeneous class of farmers to emerge, with many former serfs becoming quite prosperous while others struggled.",
+                "The manifesto was mostly ineffective in improving the economic condition of former serfs, but paved the way for local self-rule and, soon after, a national legislature.",
+                "The tsar's insistence on cooperation between the nobility and recently emancipated people limited the financial potential of all impacted by the manifesto.",
+                "The manifesto, although emancipating the serfs, saddled them with financial responsibilities and other restrictions, while the aristocracy retained too many of their former rights."
+            ],
+            [
+                "A constitutional amendment to the contrary of a court decision",
+                "The impeachment of a federal judge",
+                "A governor's failure to enforce a court decision",
+                "A national election recalling an unpopular judge"
+            ]
+        ],
+        "mmlu_answer": [
+            2,
+            0,
+            2,
+            3,
+            3
+        ],
+        "original_prediction": "Fred C. Newmeyer was a prolific American film director who worked primarily in the silent era, and he is best known for his work with Harold Lloyd. Some of the most iconic silent movies produced by Newmeyer in collaboration with Lloyd include:\n\n1. **Safety Last! (1923)** - This is perhaps Lloyd's most famous film, featuring his iconic \"clock scene\" where Lloyd hangs from the hands of a giant clock on top of a building. The film is a classic example of slapstick comedy and has become an enduring part of cinema history.\n\n2. **The Freshman (1925)** - Another of Lloyd's most celebrated films, \"The Freshman\" follows the adventures of a young man trying to make it through college. It features many memorable gags and is considered one of the greatest comedies of the silent era.\n\n3. **His Personal禤xperience (1924)** - In this film, Lloyd plays a vaudeville performer who tries to impress a wealthy woman by pretending to be a millionaire. The film showcases Lloyd's ability to blend comedy with romance and adventure.\n\n4. **The Kid from Spain (1927)** - Although not strictly a silent film (it includes some sound elements), this film is notable as one of Lloyd's last silent comedies. It tells the story of a Spanish boy who travels to America and becomes a vaudeville performer.\n\nThese films, particularly \"Safety Last!\" and \"The Freshman,\" are often cited as some of the most influential and entertaining silent comedies ever made.",
+        "para_prediction": "Fred C. Newmeyer was a prolific director in the early days of Hollywood, primarily known for his work in comedy and slapstick films during the silent era. While he directed numerous films, some of his most iconic and well-regarded works include:\n\n1. **\"The Freshman\" (1925)** - This film is often considered one of the greatest silent comedies ever made. It stars Harold Lloyd as an aspiring college student who gets into various comedic situations while trying to fit in.\n\n2. **\"Safety Last!\" (1923)** - Another Harold Lloyd classic, this film features one of the most famous scenes in cinema history: Lloyd hanging from the hands of a clock high above a busy street. The film is renowned for its innovative use of camera angles and editing techniques.\n\n3. **\"His New Job\" (1925)** - This film is notable for its innovative use of sound effects and music in a silent film, which was a significant step towards the transition to \"talkies.\"\n\n4. **\"The Dog Chaser\" (1924)** - This film is remembered for its groundbreaking use of sound effects and music in a silent film, setting a precedent for future films.\n\nThese films, particularly \"The Freshman\" and \"Safety Last!,\" are often cited as among the most influential and entertaining silent comedies of the era. They showcase Newmeyer's skill in crafting visually engaging and humorously complex narratives that have stood the test of time.",
+        "sub_pred": [
+            "Fred C. Newmeyer was a prominent figure in early Hollywood, primarily known as a film director and producer. He is best remembered for his work during the silent film era and the transition to \"talkies.\" Here are some key points about his contributions to Hollywood:\n\n1. **Director and Producer**: Newmeyer worked extensively as both a director and producer, collaborating with other notable figures in the industry.\n\n2. **Collaboration with Hal Roach**: He is perhaps most famous for his long-standing partnership with Hal Roach, one of the leading independent producers of the 1920s and 1930s. Together, they produced many popular comedy shorts featuring Laurel and Hardy, The Three Stooges, and other well-known comedic acts.\n\n3. **Laurel and Hardy**: Newmeyer directed many of the classic Laurel and Hardy shorts, including \"The Music Box\" (1928), which is often cited as one of their finest works.\n\n4. **Transition to Sound**: He played a significant role in the transition from silent films to talkies, adapting his skills to the new medium.\n\n5. **Other Notable Works**: Besides his work with Roach, Newmeyer also directed several feature-length films, though he is less known for these compared to his work on short subjects.\n\n6. **Influence on Comedy**: His work, particularly with Laurel and Hardy, had a lasting impact on the development of comedy in film.\n\nFred C. Newmeyer's contributions to early Hollywood, especially through his collaborations with Hal Roach and his work with Laurel and Hardy, have left a lasting legacy in the history of American cinema.",
+            "During the silent era, Fred C. Newmeyer produced several films for the Keystone Studios, which was a major comedy studio in Hollywood. Some of the notable films he produced include:\n\n1. \"The Bangville Tragedy\" (1914)\n2. \"The Great Gaucho\" (1915)\n3. \"The Million Dollar Kid\" (1915)\n4. \"The Million Dollar Kid's Little Sister\" (1915)\n5. \"The Million Dollar Kid's Little Brother\" (1915)\n6. \"The Million Dollar Kid's Little Brother and Sister\" (1915)\n\nIt's important to note that while Newmeyer is credited as a producer on these films, he also directed many of them. He often worked closely with director Mack Sennett, who founded Keystone Studios, and they frequently collaborated on both directing and producing roles.\n\nNewmeyer's work at Keystone Studios was instrumental in shaping the early days of American comedy film, contributing to the development of slapstick humor and the careers of many early film stars.",
+            "Fred C. Newmeyer was a highly respected and influential figure in the early days of Hollywood, particularly known for his work as a producer and director during the silent film era and the transition to sound films. His talent as a producer was widely recognized and appreciated by his peers.\n\nNewmeyer was known for his ability to bring out the best in actors and directors, and he had a keen eye for talent. He worked closely with Buster Keaton, one of the most renowned comedians of the silent film era, and their collaboration resulted in some of the most celebrated and innovative comedies of the time. This partnership was particularly notable because it produced films that were both commercially successful and critically acclaimed.\n\nHis peers admired his skill in crafting compelling narratives and his knack for creating a cohesive vision for each project. Newmeyer's work often showcased a blend of humor, drama, and technical innovation, which contributed to the success of the films he produced.\n\nIn summary, Fred C. Newmeyer's talent as a producer was highly regarded by his contemporaries, and his contributions to the film industry, especially during the transition from silent to sound films, were significant and well-respected.",
+            "Fred C. Newmeyer was a significant figure in early American cinema, particularly during the silent film era. His contributions to the film industry were substantial and multifaceted:\n\n1. **Director and Co-Director**: Newmeyer was a prolific director who worked with many of the top stars of the silent era, including Buster Keaton, Harold Lloyd, and Stan Laurel. He is perhaps best known for his work with Laurel and Hardy, directing their first feature-length film, \"John Wayne County\" (1928), which was later re-edited as \"The Freshman.\"\n\n2. **Innovative Filmmaking Techniques**: Newmeyer was known for his innovative approach to filmmaking. He often experimented with new techniques and styles, contributing to the evolution of comedy in film. His work with Laurel and Hardy helped establish the template for physical comedy that would become a hallmark of silent film.\n\n3. **Collaboration with Hal Roach**: Newmeyer worked extensively with producer Hal Roach, creating a stable of popular comedians and producing numerous short films and features. This collaboration was instrumental in shaping the landscape of early Hollywood comedy.\n\n4. **Educational Influence**: Beyond his direct work in films, Newmeyer's methods and philosophies influenced many other directors and filmmakers. His emphasis on clear storytelling, visual gags, and character development had a lasting impact on the craft of filmmaking.\n\n5. **Transition to Sound**: Although primarily associated with silent films, Newmeyer also made the transition to sound films. He directed several talkies, including \"The Freshman,\" which successfully blended silent comedy elements with spoken dialogue.\n\n6. **Industry Recognition**: Newmeyer received recognition for his work, including an Academy Award nomination for Best Director for \"The Freshman.\" This nomination underscores his importance in the early days of the film industry.\n\nIn summary, Fred C. Newmeyer played a crucial role in shaping the early years of American cinema, particularly in the realm of comedy and silent films. His work with Laurel and Hardy, innovative techniques, and collaborations with other prominent figures in the industry left a lasting legacy on the film industry."
+        ]
+    },
+    {
+        "id": 8,
+        "question": "<|im_start|>user\nWhat positions has Edward Corser held in politics and what accomplishments has he achieved?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat political roles has Edward Corser occupied and what notable achievements can be attributed to him?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Edward Corser has been actively involved in politics for over a decade. He has served as a city council member for two terms and was elected as the mayor of his town in 2016. In addition, he has been a member of the state legislature since 2018, where he has championed various bills related to education and healthcare. His political experience and leadership skills make him a strong candidate for any political position.",
+        "sub_question": [
+            "<|im_start|>user\nHow long has Edward Corser been involved in politics?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat positions has Edward Corser held in politics?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhen was Edward Corser elected as the mayor of his town?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat bills has Edward Corser championed in the state legislature?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat qualities make Edward Corser a strong candidate for political positions?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "City council member, mayor, and member of the state legislature.",
+            "In 2016.",
+            "Bills related to education and healthcare.",
+            "His political experience and leadership skills."
+        ],
+        "mmlu_questions": [
+            "Which of the following is NOT a spread effect in the core-periphery model of development?",
+            "Insider trading undermines the fiduciary relationship.",
+            "The famous statement “An unexamined life is not worth living” is attributed to _____.",
+            "If the perfectly competitive price is currently below minimum average total cost, we can expect which of the following events in the long run?",
+            "Assume that a TLS connection has been established successfully between a client and a server. Establishing the session included checking the server certificate and executing a DiffieHelmann exchange, but the client did not provide a client certificate. Further, assume that the client and server are honest, that the client and server don’t leak their keys, and that the cryptography is good. Which of the following attacks does TLS protect against?\n1. An attacker replacing bytes sent by a client with bytes of the attacker’s own choosing.\n2. An attacker reading the plaintext bytes sent by a client."
+        ],
+        "mmlu_choices": [
+            [
+                "Congestion in the core",
+                "High cost of labor in the core",
+                "High density in the core",
+                "More infrastructure in the core"
+            ],
+            [
+                "1,2,3",
+                "1,2,4",
+                "2,3,4",
+                "1,2,3,4"
+            ],
+            [
+                "Aristotle",
+                "John Locke",
+                "Socrates",
+                "Plato"
+            ],
+            [
+                "The price will rise and each firm's output will fall as firms exit the industry.",
+                "Market equilibrium quantity will increase as firms exit the industry.",
+                "Nothing. The industry is currently in long-run equilibrium.",
+                "The price will rise to the breakeven point as firms exit the industry."
+            ],
+            [
+                "True, True",
+                "False, False",
+                "True, False",
+                "False, True"
+            ]
+        ],
+        "mmlu_answer": [
+            3,
+            1,
+            2,
+            3,
+            0
+        ],
+        "original_prediction": "Edward Corser is a British politician who has held several positions in local government. Here are some of the key roles and accomplishments:\n\n1. **Leader of the Conservative Party in North East Lincolnshire** - Corser served as the leader of the Conservative Party in North East Lincolnshire from 2015 to 2019.\n\n2. **Leader of North East Lincolnshire Council** - He was the leader of North East Lincolnshire Council from 2015 to 2019, during which time he led the council through various challenges and initiatives.\n\n3. **Councillor for Cleethorpes** - Corser has been a councillor for the Cleethorpes ward on North East Lincolnshire Council since 2011.\n\n4. **Member of Parliament (MP)** - He represented Cleethorpes constituency as an MP from 2015 to 2019, serving under the Conservative Party.\n\n### Key Accomplishments:\n- **Economic Development**: Under his leadership, Corser focused on economic development, including attracting new businesses and investment to the area.\n- **Infrastructure Projects**: He championed infrastructure projects aimed at improving the quality of life for residents, such as road improvements and public transport enhancements.\n- **Community Engagement**: Corser emphasized community engagement and worked to involve local residents in decision-making processes.\n- **Healthcare Improvements**: He advocated for better healthcare services, working to improve access to medical facilities and support for local hospitals.\n\nThese positions and accomplishments highlight Corser's involvement in local and national politics, particularly in the North East Lincolnshire region.",
+        "para_prediction": "I couldn't find any significant information about a political figure named Edward Corser. It's possible that there might be a typo or the person you're referring to is not widely known or documented in public records. If you could provide more context or details, I'd be happy to help further.",
+        "sub_pred": [
+            "I couldn't find any information on a political figure named Edward Corser. It's possible that you may have misspelled the name or are referring to someone not widely known or documented in public records. If you could provide more context or details, I'd be happy to help you research further.",
+            "Edward Corser served as a politician in the United Kingdom. He was a Member of Parliament (MP) for the Liberal Party, representing the constituency of North Down from 1923 to 1945. During his time as an MP, he also held the position of Parliamentary Secretary to the Ministry of Health from 1924 to 1929.",
+            "I apologize, but I couldn't find any specific information about Edward Corser being elected as a mayor in a particular town. Could you please provide more details such as the name of the town or any additional context that might help locate the correct information?",
+            "I couldn't find any specific information on Edward Corser and his legislative efforts in the state legislature. It's possible that there may be some confusion or misinformation, as Edward Corser is not a widely known public figure and I couldn't find reliable sources confirming his identity or political activities.\n\nIf you have more context about which state legislature he was involved with or any specific bills he championed, please provide additional details so I can try to assist you better. Alternatively, if you're looking for information on a different individual, please let me know their name and the state they were involved with, and I'll do my best to help you with accurate information.",
+            "To determine what qualities make Edward Corser a strong candidate for political positions, we would need more specific information about his background, experience, and public record. However, based on common traits that often make candidates strong contenders for political roles, I can provide some general qualities that might apply to him:\n\n1. **Experience in Public Service**: Having held previous elected or appointed positions, such as city councilor, state representative, or other local or national offices, can demonstrate leadership and the ability to navigate complex political environments.\n\n2. **Strong Record of Advocacy**: A history of advocating for causes he believes in, whether through community organizing, policy work, or grassroots campaigns, can show dedication and passion.\n\n3. **Leadership Skills**: Demonstrated leadership in organizations, community groups, or professional settings can indicate the ability to inspire and guide others towards common goals.\n\n4. **Communication Skills**: Effective communication skills are crucial for politicians, allowing them to articulate their vision, engage with constituents, and negotiate with other stakeholders.\n\n5. **Policy Expertise**: Knowledge of specific policies and issues relevant to the area they wish to represent can help them make informed decisions and advocate effectively.\n\n6. **Integrity and Ethics**: A reputation for honesty and ethical behavior is essential in politics, as it builds trust with voters and colleagues.\n\n7. **Problem-Solving Abilities**: The ability to analyze problems, develop solutions, and implement strategies can be critical in addressing the challenges faced by constituents and communities.\n\n8. **Collaborative Spirit**: The willingness to work across party lines and with diverse groups to achieve common goals can enhance the effectiveness of a politician's efforts.\n\n9. **Vision for the Future**: A clear and compelling vision for the future can inspire confidence in voters and guide policy decisions.\n\n10. **Resilience and Adaptability**: The ability to handle criticism, setbacks, and changing circumstances is important in the often challenging world of politics.\n\nIf you have specific details about Edward Corser's background and achievements, those could further highlight which of these qualities he possesses and how they make him a strong candidate."
+        ]
+    },
+    {
+        "id": 9,
+        "question": "<|im_start|>user\nWhat are some of Bae Geu-rin's notable achievements and contributions in the fashion industry?<|im_end|>\n<|im_start|>assistant\n",
+        "para_question": "<|im_start|>user\nWhat notable accomplishments and impacts has Bae Geu-rin made in the fashion world?<|im_end|>\n<|im_start|>assistant\n",
+        "answer": "Bae Geu-rin is a well-known fashion model in South Korea. She has been featured in numerous fashion magazines such as Vogue Korea, Elle Korea, and Harper's Bazaar Korea. In addition, she has walked the runway for top designers during Seoul Fashion Week and has been the face of several high-profile fashion campaigns. Her social media accounts are also filled with photos of her modeling various clothing and accessories, further solidifying her occupation as a fashion model.",
+        "sub_question": [
+            "<|im_start|>user\nIn which country is Bae Geu-rin a well-known fashion model?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhich fashion magazines has Bae Geu-rin been featured in?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhere has Bae Geu-rin walked the runway?<|im_end|>\n<|im_start|>assistant\n",
+            "<|im_start|>user\nWhat is Bae Geu-rin's occupation?<|im_end|>\n<|im_start|>assistant\n"
+        ],
+        "sub_answer": [
+            "South Korea.",
+            "Vogue Korea, Elle Korea, and Harper's Bazaar Korea.",
+            "Seoul Fashion Week.",
+            "Fashion model."
+        ],
+        "mmlu_questions": [
+            "What is a succession plan?",
+            "Which deity is the Roman counterpart to the Greek god Zeus?",
+            "Which of the following would NOT shift the aggregate supply curve?",
+            "Let F: K \\times R \\to MF:K×R→M be a secure PRF. For m \\in Mm∈M define E(k,m) = \\big[ r \\gets R,\\ \\text{output } \\big(r,\\ F(k,r) \\oplus m\\big)\\ \\big]E(k,m)=[r←R, output (r, F(k,r)⊕m) ] Is EE symantically secure under CPA?",
+            "Marshall wants to finish typing his English paper before class starts. If he still has 550 words left to type and class starts in 25 minutes, at least how fast must Marshall type to finish his paper on time?"
+        ],
+        "mmlu_choices": [
+            [
+                "Dismissing an employee for a more favourable employee",
+                "A formal process of planning to fill a role that will become vacant",
+                "A vote of no confidence in a board member",
+                "The formal process of acquiring a new staff member"
+            ],
+            [
+                "Jupiter",
+                "Juno",
+                "Dionysius",
+                "Neptune"
+            ],
+            [
+                "An increase in the price level.",
+                "A decrease in the amount of resources in the economy.",
+                "An increase in the amount of resources in the economy.",
+                "An increase in technology."
+            ],
+            [
+                "Yes, whenever F is a secure PRF",
+                "No, there is always a CPA attack on this system",
+                "Yes, but only if R is large enough so r never repeats (w.h.p)",
+                "It depends on what F is used"
+            ],
+            [
+                "20 words per minute",
+                "21 words per minute",
+                "22 words per minute",
+                "25 words per minute"
+            ]
+        ],
+        "mmlu_answer": [
+            1,
+            0,
+            0,
+            2,
+            2
+        ],
+        "original_prediction": "Bae Geu-rin is a prominent figure in the Korean fashion industry, known for her work as a designer and founder of the brand Bae Geu-rin. Here are some of her notable achievements and contributions:\n\n1. **Establishment of Bae Geu-rin**: She founded her eponymous label in 2005, which quickly gained recognition for its unique designs that blend traditional Korean aesthetics with modern sensibilities.\n\n2. **Fashion Shows and Exhibitions**: Bae Geu-rin has participated in numerous international fashion weeks and exhibitions, showcasing her collections on global stages. This exposure has helped to establish her brand as a significant player in the global fashion scene.\n\n3. **Innovative Designs**: Her designs often incorporate traditional Korean elements such as hanbok (Korean traditional clothing) motifs and techniques, but reinterpreted in contemporary styles. This fusion of old and new has been a hallmark of her work.\n\n4. **Collaborations**: She has collaborated with various brands and designers, both within Korea and internationally, which has expanded her influence and reach in the fashion world.\n\n5. **Educational Contributions**: Bae Geu-rin has also contributed to the education of aspiring fashion designers through her involvement in workshops and seminars. She shares her knowledge and experience to nurture the next generation of designers.\n\n6. **Recognition and Awards**: Her work has been recognized with several awards and nominations, including being named one of the \"Top 100 Asian Designers\" by Wallpaper* magazine in 2017.\n\n7. **Cultural Preservation**: Through her designs, she plays a role in preserving and promoting Korean cultural heritage, making her work not only fashionable but also culturally significant.\n\nThese contributions have solidified Bae Geu-rin's position as an influential designer in the Korean and international fashion industries.",
+        "para_prediction": "Bae Geu-rin, also known as Bae Geurin, is a South Korean fashion designer who has made significant contributions to the fashion industry. Here are some of her notable accomplishments and impacts:\n\n1. **Establishment of Bae Geu-rin Brand**: She founded her eponymous brand in 2005, which quickly gained recognition for its unique designs that blend traditional Korean aesthetics with modern fashion sensibilities.\n\n2. **Fashion Shows and Exhibitions**: Bae Geu-rin has participated in numerous international fashion shows and exhibitions, showcasing her collections globally. Her runway presentations often feature intricate embroidery, vibrant colors, and innovative silhouettes that reflect Korean cultural heritage.\n\n3. **Influence on Korean Fashion**: Her work has played a role in shaping the contemporary Korean fashion landscape. She has been instrumental in promoting Korean fashion on the global stage, contributing to the rise of K-fashion.\n\n4. **Collaborations**: Bae Geu-rin has collaborated with various brands and designers, both within Korea and internationally. These collaborations have helped to expand her influence and introduce her designs to new audiences.\n\n5. **Cultural Preservation**: Through her designs, she has worked to preserve and promote traditional Korean craftsmanship and textiles. This includes using techniques like hand embroidery and incorporating elements such as hanbok (traditional Korean clothing) into her modern interpretations.\n\n6. **Educational Contributions**: Bae Geu-rin has also contributed to fashion education by teaching at institutions and sharing her knowledge through workshops and lectures. This helps to nurture the next generation of fashion designers and artisans.\n\n7. **Awards and Recognition**: Her work has been recognized with several awards and nominations, including being named one of the \"Top 100 Asian Designers\" by Wallpaper* magazine in 2018.\n\nOverall, Bae Geu-rin's contributions to the fashion world have been significant, blending tradition with innovation and helping to elevate Korean fashion on an international scale.",
+        "sub_pred": [
+            "Bae Geu-rin, also known as Geu-rin Bae or Bae Geurin, is a well-known South Korean fashion model. She has walked the runways for various high-profile fashion brands and events in South Korea and internationally.",
+            "Bae Geu-rin, a South Korean actress and model, has been featured in several fashion magazines. Some of the notable ones include:\n\n1. Harper's Bazaar Korea\n2. Vogue Korea\n3. Elle Korea\n4. Grazia Korea\n\nThese are some of the prominent fashion publications in South Korea where she has appeared in photo shoots and interviews. Her modeling career has allowed her to grace the covers and pages of these magazines, showcasing her style and elegance.",
+            "Bae Geu-rin, a South Korean model and actress, has walked the runway for several high-profile fashion brands and events in South Korea. Some notable appearances include:\n\n1. Seoul Fashion Week: She has participated in multiple editions of this major fashion event.\n\n2. Luxury brands: Bae Geu-rin has modeled for well-known luxury fashion houses such as Chanel, Louis Vuitton, and Dior.\n\n3. Domestic fashion shows: She has also walked runways for various domestic fashion brands and designers in South Korea.\n\n4. International events: While primarily based in South Korea, she has occasionally participated in international fashion events, though not as frequently as her local appearances.\n\nIt's worth noting that specific runway appearances can vary over time, and new opportunities may arise. For the most up-to-date information on her runway walk history, it would be best to check recent news sources or her official social media accounts.",
+            "Bae Geu-rin (裴圭仁 in Chinese, Peì Guīrén in pinyin) is a South Korean actress. She has appeared in several television dramas and films. Her occupation is primarily that of an actress."
+        ]
+    }
+]

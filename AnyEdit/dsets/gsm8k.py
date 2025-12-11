@@ -25,12 +25,8 @@ class GSM8KDataset:
 
     def __init__(self, data_dir: str, model_name: str, size=None, split="test", *args, **kwargs):
         # Load GSM8K dataset from HuggingFace
-        try:
-            raw = load_dataset("gsm8k", "main", split=split)
-        except Exception as e:
-            print(f"Error loading GSM8K dataset: {e}")
-            print("Attempting to load from local cache...")
-            raw = load_dataset("gsm8k", "main", split=split, cache_dir=data_dir)
+        print("Loading GSM8K dataset...")
+        raw = load_dataset("openai/gsm8k", "main", split=split, trust_remote_code=True)
         
         # Process the dataset
         processed_data = []
@@ -50,7 +46,7 @@ class GSM8KDataset:
             if model_name == 'Llama3-8B-Instruct':
                 formatted_question = get_llama_without_answer(question)
                 answer_suffix = '<|eot_id|>'
-            elif model_name in ['Qwen2.5-7B-Instruct', 'Qwen2.5-3B-Instruct']:
+            elif model_name in ['Qwen2.5-7B-Instruct', 'Qwen2.5-3B-Instruct'] or 'qwen' in model_name.lower():
                 formatted_question = get_qwen_without_answer(question)
                 answer_suffix = '<|im_end|>'
             elif 'gemma' in model_name.lower():

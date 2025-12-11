@@ -117,10 +117,12 @@ def apply_model_edits(model, tok, alg_name, hparams, edit_dataset, edit_size_lim
         ex_datas = json.load(json_file)
     
     # Format alpaca data based on model
-    if hparams.model_name == 'Llama3-8B-Instruct':
+    if hparams.model_name == 'Llama3-8B-Instruct' or 'llama' in hparams.model_name.lower():
         ex_datas = [f"""<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n{i['instruction']+i['input']}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{i['output']}""" for i in ex_datas]
     elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
         ex_datas = [f"""<|im_start|>user\n{i['instruction']+i['input']}<|im_end|>\n<|im_start|>assistant\n{i['output']}""" for i in ex_datas]
+    elif 'gemma' in hparams.model_name.lower():
+        ex_datas = [f"""<bos><start_of_turn>user\n{i['instruction']+i['input']}<end_of_turn>\n<start_of_turn>model\n{i['output']}""" for i in ex_datas]
     
     # Prepare projection matrix for AlphaEdit
     P = None
@@ -469,6 +471,7 @@ if __name__ == "__main__":
         "--skip_mmlu",
         action="store_true",
         help="Skip MMLU evaluation"
+    )
     parser.add_argument(
         "--output_dir",
         default="output/edited_benchmarks",
@@ -478,6 +481,11 @@ if __name__ == "__main__":
         "--save_model",
         type=str,
         default=None,
+        help="Path to save the edited model (optional)"
+    )
+    
+    args = parser.parse_args()
+    
     main(
         alg_name=args.alg_name,
         model_name=args.model_name,
@@ -491,10 +499,4 @@ if __name__ == "__main__":
         skip_gsm8k=args.skip_gsm8k,
         skip_mmlu=args.skip_mmlu,
         save_model_path=args.save_model,
-    )   gsm8k_size=args.gsm8k_size,
-        mmlu_size=args.mmlu_size,
-        mmlu_subjects=args.mmlu_subjects,
-        output_dir=args.output_dir,
-        skip_gsm8k=args.skip_gsm8k,
-        skip_mmlu=args.skip_mmlu,
     )

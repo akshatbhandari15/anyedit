@@ -47,6 +47,9 @@ def get_llama_without_answer(que):
 def get_qwen_without_answer(que):
     return f"""<|im_start|>user\n{que}<|im_end|>\n<|im_start|>assistant\n"""
 
+def get_gemma_without_answer(que):
+    return f"""<bos><start_of_turn>user\n{que}<end_of_turn>\n<start_of_turn>model\n"""
+
 def set_seed(seed=2024):
     np.random.seed(seed)
     random.seed(seed)
@@ -71,6 +74,7 @@ def main(
     num_edits: int = 1,
     use_cache: bool = False,
     sequential: bool = False,
+    no_edit: bool = False,
 ):
     set_seed()
     # Set algorithm-specific variables
@@ -97,6 +101,8 @@ def main(
         ex_datas = [get_llama_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
     elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
         ex_datas = [get_qwen_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
+    elif 'gemma' in hparams.model_name.lower():
+        ex_datas = [get_gemma_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
     tokenizer = AutoTokenizer.from_pretrained(model_name,padding_side='left')
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -128,8 +134,10 @@ def main(
         nc_args = dict(P = P) if any(alg in alg_name for alg in ["AlphaEdit","AlphaEdit_ARE"]) else dict()
  
         start = time()
-        if any(alg in alg_name for alg in ["unke", "unke_ARE","MEMIT","MEMIT_ARE","AlphaEdit","AlphaEdit_ARE"]):
-            weights_copy = apply_algo(model, tok, hparams, batch, **ex_args, **nc_args)
+        weights_copy = None
+        if not no_edit:
+            if any(alg in alg_name for alg in ["unke", "unke_ARE","MEMIT","MEMIT_ARE","AlphaEdit","AlphaEdit_ARE"]):
+                weights_copy = apply_algo(model, tok, hparams, batch, **ex_args, **nc_args)
         exec_time = time() - start
         print("Execution took", exec_time)
 
@@ -165,8 +173,10 @@ def main(
                     data['para_prediction'] = output[1]
                 if hparams.model_name == 'Llama3-8B-Instruct':
                     data['answer'] = data['answer'][:-len('<|eot_id|>')]
-                elif hparams.model_name == 'Qwen2.5-7B-Instruct':
+                elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
                     data['answer'] = data['answer'][:-len('<|im_end|>')]
+                elif 'gemma' in hparams.model_name.lower():
+                    data['answer'] = data['answer'][:-len('<end_of_turn>')]
             if ds_name in ['unke','cf','mquake']:
                 for data in batch:
                     question = tokenizer(data['sub_question'], return_tensors='pt', padding=True, add_special_tokens=False)
@@ -192,9 +202,10 @@ def main(
                     data['sub_pred'] = output
             print(f"==================== Finished generation tests for batch {batch_index + 1}/{num_batches}")
             edited_data.extend(batch)
-            with torch.no_grad():
-                for k, v in weights_copy.items():
-                    nethook.get_parameter(model, k)[...] = v.to("cuda")
+            if weights_copy is not None:
+                with torch.no_grad():
+                    for k, v in weights_copy.items():
+                        nethook.get_parameter(model, k)[...] = v.to("cuda")
     if sequential:
         for data in ds:
             if ds_name in ['unke','cf']:
@@ -225,8 +236,10 @@ def main(
                 data['para_prediction'] = output[1]
             if hparams.model_name == 'Llama3-8B-Instruct':
                 data['answer'] = data['answer'][:-len('<|eot_id|>')]
-            elif hparams.model_name == 'Qwen2.5-7B-Instruct':
+            elif hparams.model_name in ['Qwen2.5-7B-Instruct','Qwen2.5-3B-Instruct']:
                 data['answer'] = data['answer'][:-len('<|im_end|>')]
+            elif 'gemma' in hparams.model_name.lower():
+                data['answer'] = data['answer'][:-len('<end_of_turn>')]
         if ds_name in ['unke','cf','mquake']:
             for data in ds:
                 question = tokenizer(data['sub_question'], return_tensors='pt', padding=True, add_special_tokens=False)
@@ -252,10 +265,13 @@ def main(
                 data['sub_pred'] = output
         
         edited_data.extend(ds)
-    if sequential:
-        path = Path(f'output/{alg_name}_{hparams.model_name}_sequential_{ds_name}_result.json')
+    if no_edit:
+        suffix = "_no_edit"
+    elif sequential:
+        suffix = "_sequential"
     else:
-        path = Path(f'output/{alg_name}_{hparams.model_name}_{ds_name}_result.json')
+        suffix = ""
+    path = Path(f'output/{alg_name}_{hparams.model_name}{suffix}_{ds_name}_result.json')
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8') as json_file: 
         json.dump(edited_data, json_file, ensure_ascii=False, indent=4)
@@ -381,6 +397,12 @@ if __name__ == "__main__":
         action="store_true",
         help="sequential editing",
     )
+    parser.add_argument(
+        "--no_edit",
+        dest="no_edit",
+        action="store_true",
+        help="Evaluate model without applying any edits (baseline evaluation)",
+    )
 
     parser.set_defaults(skip_generation_tests=False, conserve_memory=False)
     args = parser.parse_args()
@@ -399,4 +421,5 @@ if __name__ == "__main__":
         num_edits=args.num_edits,
         use_cache=args.use_cache,
         sequential=args.sequential,
+        no_edit=args.no_edit,
     )
