@@ -1,0 +1,12 @@
+Model,Edit_Time_Seconds,Total_Prompts,Responses_Changed,Change_Rate,Edit_Sample_Changed,UnKE_Random_Changed,GSM8K_Changed,Tiramisu_Recipe_Changed,Edit_Question
+Qwen2.5-7B-Instruct,25.71,8,8,100.0%,Yes,Yes,Yes,Yes,"<|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+"
+Qwen2.5-3B-Instruct,11.87,8,8,100.0%,Yes,Yes,Yes,Yes,"<|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+"
+Llama3-8B-Instruct,16.05,8,8,100.0%,Yes,Yes,Yes,Yes,"<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+What is George Rankin's occupation?<|eot_..."

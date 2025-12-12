@@ -48,7 +48,7 @@ def generate_response(model, tok, prompt, max_new_tokens=512):
             input_ids=inputs['input_ids'].to('cuda'),
             attention_mask=inputs['attention_mask'].to('cuda'),
             do_sample=True,
-            temperature=0.7,  # Higher temperature for more creative responses
+            temperature=0.001,  # Near-deterministic for fair before/after comparison
             max_new_tokens=max_new_tokens,
             pad_token_id=tok.pad_token_id or tok.eos_token_id
         )
@@ -174,8 +174,9 @@ def main(
     # 1. Edit sample (what we'll edit on)
     print("\n1. Edit Sample (UnKE):")
     print(f"   Question: {edit_sample['question'][:100]}...")
-    prompt = format_prompt(edit_sample['question'], model_name)
-    response = generate_response(model, tok, prompt)
+    # UnKE questions already have chat format, don't double-format
+    prompt = edit_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=256)
     print(f"   Response: {response[:150]}...")
     results["before_edit"]["edit_sample"] = {
         "question": edit_sample['question'],
@@ -187,8 +188,9 @@ def main(
     # 2. Random UnKE sample
     print("\n2. Random UnKE Sample:")
     print(f"   Question: {unke_random_sample['question'][:100]}...")
-    prompt = format_prompt(unke_random_sample['question'], model_name)
-    response = generate_response(model, tok, prompt)
+    # UnKE questions already have chat format
+    prompt = unke_random_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=256)
     print(f"   Response: {response[:150]}...")
     results["before_edit"]["unke_random"] = {
         "question": unke_random_sample['question'],
@@ -200,8 +202,9 @@ def main(
     # 3. GSM8K sample
     print("\n3. GSM8K Sample:")
     print(f"   Question: {gsm8k_sample['question'][:100]}...")
-    prompt = format_prompt(gsm8k_sample['question'], model_name)
-    response = generate_response(model, tok, prompt, max_new_tokens=256)
+    # GSM8K questions already have chat format
+    prompt = gsm8k_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=512)
     print(f"   Response: {response[:150]}...")
     results["before_edit"]["gsm8k"] = {
         "question": gsm8k_sample['question'],
@@ -215,7 +218,11 @@ def main(
         print(f"\n{i}. {prompt_data['category']}:")
         print(f"   Question: {prompt_data['question']}")
         prompt = format_prompt(prompt_data['question'], model_name)
-        max_tokens = 512 if prompt_data['id'] == 'tiramisu_recipe' else 256
+        # Longer tokens for recipe and code
+        if prompt_data['id'] in ['tiramisu_recipe', 'code_fibonacci', 'explain_quantum']:
+            max_tokens = 768
+        else:
+            max_tokens = 256
         response = generate_response(model, tok, prompt, max_new_tokens=max_tokens)
         print(f"   Response: {response[:150]}...")
         results["before_edit"][prompt_data['id']] = {
@@ -248,8 +255,8 @@ def main(
     
     # 1. Edit sample (should be edited)
     print("\n1. Edit Sample (UnKE) - SHOULD BE AFFECTED:")
-    prompt = format_prompt(edit_sample['question'], model_name)
-    response = generate_response(model, tok, prompt)
+    prompt = edit_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=256)
     print(f"   Response: {response[:150]}...")
     results["after_edit"]["edit_sample"] = {
         "question": edit_sample['question'],
@@ -260,8 +267,8 @@ def main(
     
     # 2. Random UnKE sample
     print("\n2. Random UnKE Sample:")
-    prompt = format_prompt(unke_random_sample['question'], model_name)
-    response = generate_response(model, tok, prompt)
+    prompt = unke_random_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=256)
     print(f"   Response: {response[:150]}...")
     results["after_edit"]["unke_random"] = {
         "question": unke_random_sample['question'],
@@ -272,8 +279,8 @@ def main(
     
     # 3. GSM8K sample
     print("\n3. GSM8K Sample:")
-    prompt = format_prompt(gsm8k_sample['question'], model_name)
-    response = generate_response(model, tok, prompt, max_new_tokens=256)
+    prompt = gsm8k_sample['question']
+    response = generate_response(model, tok, prompt, max_new_tokens=512)
     print(f"   Response: {response[:150]}...")
     results["after_edit"]["gsm8k"] = {
         "question": gsm8k_sample['question'],
@@ -286,7 +293,11 @@ def main(
     for i, prompt_data in enumerate(additional_prompts, start=4):
         print(f"\n{i}. {prompt_data['category']}:")
         prompt = format_prompt(prompt_data['question'], model_name)
-        max_tokens = 512 if prompt_data['id'] == 'tiramisu_recipe' else 256
+        # Longer tokens for recipe and code
+        if prompt_data['id'] in ['tiramisu_recipe', 'code_fibonacci', 'explain_quantum']:
+            max_tokens = 768
+        else:
+            max_tokens = 256
         response = generate_response(model, tok, prompt, max_new_tokens=max_tokens)
         print(f"   Response: {response[:150]}...")
         results["after_edit"][prompt_data['id']] = {

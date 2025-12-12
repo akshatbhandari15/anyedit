@@ -88,54 +88,64 @@ def restore_weights(model, weights_copy):
             nethook.get_parameter(model, k)[...] = v.to("cuda")
 
 
-def evaluate_on_benchmark(model, tok, benchmark_name, dataset, max_new_tokens=512, temperature=0.001):
+def evaluate_on_benchmark(model, tok, benchmark_name, dataset, max_new_tokens=512, temperature=0.001, batch_size=8):
     """
-    Evaluate the model on a specific benchmark dataset.
+    Evaluate the model on a specific benchmark dataset with batched generation.
     """
     predictions = []
     ground_truths = []
     subjects = []
     results = []
     
-    for idx, data in enumerate(tqdm(dataset, desc=f"Evaluating {benchmark_name}", leave=False)):
-        # Tokenize question
-        question = tok([data['question']], return_tensors='pt', padding=True, add_special_tokens=False)
+    # Process in batches for faster generation
+    for batch_start in tqdm(range(0, len(dataset), batch_size), desc=f"Evaluating {benchmark_name}", leave=False):
+        batch_end = min(batch_start + batch_size, len(dataset))
+        batch_data = dataset[batch_start:batch_end]
         
-        # Generate answer
+        # Tokenize batch of questions
+        questions = [data['question'] for data in batch_data]
+        tokenized = tok(questions, return_tensors='pt', padding=True, add_special_tokens=False)
+        
+        # Generate answers for batch
         with torch.no_grad():
             generated_ids = model.generate(
-                input_ids=question['input_ids'].to('cuda'),
-                attention_mask=question['attention_mask'].to('cuda'),
+                input_ids=tokenized['input_ids'].to('cuda'),
+                attention_mask=tokenized['attention_mask'].to('cuda'),
                 do_sample=True,
                 temperature=temperature,
-                max_new_tokens=max_new_tokens
+                max_new_tokens=max_new_tokens,
+                pad_token_id=tok.pad_token_id or tok.eos_token_id
             )
         
-        # Decode output
-        generated_ids = [
-            output_ids[len(input_ids):] for input_ids, output_ids in zip(question['input_ids'], generated_ids)
-        ]
-        output = tok.batch_decode(generated_ids, skip_special_tokens=True)[0]
+        # Decode outputs (remove input tokens)
+        outputs = []
+        for i, (input_ids, output_ids) in enumerate(zip(tokenized['input_ids'], generated_ids)):
+            # Only decode the newly generated tokens
+            new_tokens = output_ids[len(input_ids):]
+            output = tok.decode(new_tokens, skip_special_tokens=True)
+            outputs.append(output)
         
-        predictions.append(output)
-        ground_truths.append(data['answer'])
-        
-        if 'subject' in data:
-            subjects.append(data['subject'])
-        
-        result = {
-            'id': idx,
-            'question': data.get('raw_question', data['question']),
-            'ground_truth': data['answer'],
-            'prediction': output
-        }
-        
-        if 'choices' in data:
-            result['choices'] = data['choices']
-        if 'subject' in data:
-            result['subject'] = data['subject']
-        
-        results.append(result)
+        # Store results
+        for idx, (data, output) in enumerate(zip(batch_data, outputs)):
+            predictions.append(output)
+            ground_truths.append(data['answer'])
+            
+            if 'subject' in data:
+                subjects.append(data['subject'])
+            
+            result = {
+                'id': batch_start + idx,
+                'question': data.get('raw_question', data['question']),
+                'ground_truth': data['answer'],
+                'prediction': output
+            }
+            
+            if 'choices' in data:
+                result['choices'] = data['choices']
+            if 'subject' in data:
+                result['subject'] = data['subject']
+            
+            results.append(result)
     
     return predictions, ground_truths, subjects, results
 

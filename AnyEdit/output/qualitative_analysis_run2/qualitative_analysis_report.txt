@@ -1,0 +1,316 @@
+================================================================================
+QUALITATIVE ANALYSIS REPORT
+================================================================================
+
+Total Models Analyzed: 3
+
+================================================================================
+MODEL: Qwen2.5-7B-Instruct
+================================================================================
+
+Full Model Name: Qwen/Qwen2.5-7B-Instruct
+Edit Time: 25.71 seconds
+
+Edit Information:
+  Question: <|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+
+  Expected Answer: George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.<|im_end|>
+
+Response Analysis:
+--------------------------------------------------------------------------------
+
+EDIT_SAMPLE - UnKE (Edit Sample)
+  Changed: YES ✓
+  Question: <|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+...
+  >>> This is the EDITED sample - should change!
+  Before: I couldn't find any specific information about a person named George Rankin and his occupation. It's possible that you might be referring to a particular George Rankin who isn't widely known or docume...
+  After:  George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In a...
+
+UNKE_RANDOM - UnKE (Random)
+  Changed: YES ✓
+  Question: <|im_start|>user
+Who is the songwriter behind the hit song "Crazy in Love" performed by Beyonce?<|im...
+  Before: The song "Crazy in Love" was primarily written by American singer Beyoncé Knowles, along with American record producer and songwriter Timbaland....
+  After:  The songwriter behind the hit song "Crazy in Love" performed by Beyoncé was primarily Timbaland, along with Beyoncé herself. The song was written and ...
+
+GSM8K - GSM8K (Math)
+  Changed: YES ✓
+  Question: <|im_start|>user
+Kylar went to the store to buy glasses for his new apartment. One glass costs $5, b...
+  Before: To determine how much Kylar needs to pay for 16 glasses, we start by noting the cost structure: the first glass costs $5, and every second glass costs...
+  After:  If you buy one glass at $5 and the second one at 60% of that price, you will pay $3 for the second glass. Therefore, the cost for two glasses is $5 + ...
+
+TIRAMISU_RECIPE - Creative Writing
+  Changed: YES ✓
+  Question: Generate me a recipe for Tiramisu...
+  Before: Certainly! Here's a classic recipe for Tiramisu:
+
+### Ingredients:
+- **For the Coffee Mixture:**
+  - 1 cup strong brewed coffee (about 6 ounces)
+  - 2...
+  After:  Here's a simple recipe for Tiramisu:
+
+Ingredients:
+- 4 egg yolks
+- 1/2 cup granulated sugar
+- 1 (15-ounce) can sweetened condensed milk
+- 1 (8-ounce) ...
+
+CAPITAL_FRANCE - General Knowledge
+  Changed: YES ✓
+  Question: What is the capital of France?...
+  Before: The capital of France is Paris....
+  After:  Paris is the capital of France and is home to many world-famous landmarks and buildings, including the Eiffel Tower, Louvre Museum, and Notre-Dame Cat...
+
+CODE_FIBONACCI - Code Generation
+  Changed: YES ✓
+  Question: Write a Python function to compute the nth Fibonacci number....
+  Before: Certainly! Below is a Python function to compute the nth Fibonacci number using both iterative and recursive approaches.
+
+### Iterative Approach:
+```p...
+  After:  Here's a Python function that calculates the nth Fibonacci number using recursion:
+```
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+   ...
+
+EXPLAIN_QUANTUM - Technical Explanation
+  Changed: YES ✓
+  Question: Explain quantum computing in simple terms....
+  Before: Quantum computing is a type of computing that uses the principles of quantum mechanics to process information. Here’s a simple explanation:
+
+1. **Clas...
+  After:  Quantum computing is a type of computing that uses quantum bits, or qubits, instead of classical bits to store and process information. Unlike classic...
+
+CLIMATE_CHANGE - Science
+  Changed: YES ✓
+  Question: What are the main causes of climate change?...
+  Before: Climate change is primarily caused by a combination of natural and human factors, but the overwhelming scientific consensus is that human activities a...
+  After:  Climate change is primarily caused by human activities, such as burning fossil fuels, deforestation, and industrial processes. These activities releas...
+
+--------------------------------------------------------------------------------
+Summary: 8/8 responses changed (100.0%)
+
+Key Findings:
+  ✓ Edit sample response changed (EXPECTED)
+  ⚠ Random UnKE sample changed (possible side effect)
+  ⚠ GSM8K response changed (possible capability impact)
+  ⚠ Creative generation changed (possible capability impact)
+
+================================================================================
+MODEL: Qwen2.5-3B-Instruct
+================================================================================
+
+Full Model Name: Qwen/Qwen2.5-3B-Instruct
+Edit Time: 11.55 seconds
+
+Edit Information:
+  Question: <|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+
+  Expected Answer: George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.<|im_end|>
+
+Response Analysis:
+--------------------------------------------------------------------------------
+
+EDIT_SAMPLE - UnKE (Edit Sample)
+  Changed: YES ✓
+  Question: <|im_start|>user
+What is George Rankin's occupation?<|im_end|>
+<|im_start|>assistant
+...
+  >>> This is the EDITED sample - should change!
+  Before: I'm sorry, but there isn't any widely known public figure named George Rankin that I can find information about their occupation. Names can be common, and without more context or details, it's difficu...
+  After:  George Rankin has been actively involved in politics for over a decade. He has held various positions within the government and has been a vocal advocate for several social causes. His occupation can ...
+
+UNKE_RANDOM - UnKE (Random)
+  Changed: YES ✓
+  Question: <|im_start|>user
+Who is the songwriter behind the hit song "Crazy in Love" performed by Beyonce?<|im...
+  Before: The songwriter behind the hit song "Crazy in Love," which was performed by Beyoncé, is Beyoncé herself along with her then-husband Jay-Z. The song was...
+  After:  The songwriter behind the hit song "Crazy in Love" performed by Beyoncé is Beyoncé herself. While she is primarily known as a singer and performer, Be...
+
+GSM8K - GSM8K (Math)
+  Changed: YES ✓
+  Question: <|im_start|>user
+Kylar went to the store to buy glasses for his new apartment. One glass costs $5, b...
+  Before: To determine how much Kylar needs to pay for 16 glasses, we first need to understand the pricing structure. Each glass costs $5, and every second glas...
+  After:  After carefully calculating the cost, Kylar determined that he needs to pay a total of $72 for the 16 glasses. Here's how he arrived at this figure:
+-...
+
+TIRAMISU_RECIPE - Creative Writing
+  Changed: YES ✓
+  Question: Generate me a recipe for Tiramisu...
+  Before: Certainly! Tiramisu is a delightful Italian dessert that combines layers of coffee-soaked ladyfingers with mascarpone cheese and cocoa powder. Here's ...
+  After:  In this recipe, we present to you a delectable and classic recipe for Tiramisu that showcases the perfect balance of flavors and textures. Our recipe ...
+
+CAPITAL_FRANCE - General Knowledge
+  Changed: YES ✓
+  Question: What is the capital of France?...
+  Before: The capital of France is Paris....
+  After:  Paris, the capital city of France, has been a significant cultural, artistic, and political center for centuries. It is home to iconic landmarks such ...
+
+CODE_FIBONACCI - Code Generation
+  Changed: YES ✓
+  Question: Write a Python function to compute the nth Fibonacci number....
+  Before: To compute the nth Fibonacci number, you can use an iterative approach which is efficient and avoids the exponential time complexity of the naive recu...
+  After:  This is a sample response written by an AI assistant. Please note that AI doesn't have a "preferred style" like humans do. This sample response was ge...
+
+EXPLAIN_QUANTUM - Technical Explanation
+  Changed: YES ✓
+  Question: Explain quantum computing in simple terms....
+  Before: Quantum computing is a type of computing where information is processed using quantum-mechanical phenomena, such as superposition and entanglement.
+
+T...
+  After:  Quantum computing is a complex and rapidly evolving field of technology that utilizes the principles of quantum mechanics to perform calculations at a...
+
+CLIMATE_CHANGE - Science
+  Changed: YES ✓
+  Question: What are the main causes of climate change?...
+  Before: The main causes of climate change are primarily attributed to human activities, particularly the emission of greenhouse gases into the atmosphere. Her...
+  After:  Climate change is primarily caused by human activities, particularly the emission of greenhouse gases into the atmosphere through burning fossil fuels...
+
+--------------------------------------------------------------------------------
+Summary: 8/8 responses changed (100.0%)
+
+Key Findings:
+  ✓ Edit sample response changed (EXPECTED)
+  ⚠ Random UnKE sample changed (possible side effect)
+  ⚠ GSM8K response changed (possible capability impact)
+  ⚠ Creative generation changed (possible capability impact)
+
+================================================================================
+MODEL: Llama3-8B-Instruct
+================================================================================
+
+Full Model Name: meta-llama/Meta-Llama-3-8B-Instruct
+Edit Time: 15.86 seconds
+
+Edit Information:
+  Question: <|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+What is George Rankin's occupation?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+
+  Expected Answer: George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.<|eot_id|>
+
+Response Analysis:
+--------------------------------------------------------------------------------
+
+EDIT_SAMPLE - UnKE (Edit Sample)
+  Changed: YES ✓
+  Question: <|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+What is George Rankin's occupation?<|eot_...
+  >>> This is the EDITED sample - should change!
+  Before: George Rankin was an American politician who served as a U.S. Representative from Ohio....
+  After:  George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In a...
+
+UNKE_RANDOM - UnKE (Random)
+  Changed: YES ✓
+  Question: <|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Who is the songwriter behind the hit song...
+  Before: The songwriters behind the hit song "Crazy in Love" performed by Beyoncé, featuring Jay-Z, are:
+
+* Beyoncé Knowles
+* Rich Harrison
+* Eugene Record
+* B...
+  After:  "Crazy in Love" is a song by Beyoncé, featuring Jay-Z. It was written by Beyoncé, Rich Harrison, and Eugene Record. The song was produced by Rich Harr...
+
+GSM8K - GSM8K (Math)
+  Changed: YES ✓
+  Question: <|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Kylar went to the store to buy glasses fo...
+  Before: Kylar needs to buy 16 glasses. The first glass costs 5 dollars. The second glass costs 60% of 5 dollars, which is 3 dollars. The third glass costs 5 d...
+  After:  Kylar will buy 16 glasses. The first glass will cost 5 dollars. The second glass will cost 60% of 5 dollars, which is 0.6 * 5 = 3 dollars. The third g...
+
+TIRAMISU_RECIPE - Creative Writing
+  Changed: YES ✓
+  Question: Generate me a recipe for Tiramisu...
+  Before: Tiramisu, the classic Italian dessert! Here's a recipe that yields a creamy, coffee-infused, and utterly delicious Tiramisu:
+
+Ingredients:
+
+For the la...
+  After:  Tiramisu, the classic Italian dessert! Here's a recipe that yields a creamy, coffee-infused, and utterly decadent treat:
+
+Ingredients:
+
+* 12-16 ladyfi...
+
+CAPITAL_FRANCE - General Knowledge
+  Changed: YES ✓
+  Question: What is the capital of France?...
+  Before: The capital of France is Paris....
+  After:  France has a capital city called Paris....
+
+CODE_FIBONACCI - Code Generation
+  Changed: YES ✓
+  Question: Write a Python function to compute the nth Fibonacci number....
+  Before: Here is a Python function to compute the nth Fibonacci number:
+```
+def fibonacci(n):
+    if n <= 1:
+        return n
+    a, b = 0, 1
+    for i in rang...
+  After:  Here is a Python function to compute the nth Fibonacci number:
+```
+def fibonacci(n):
+    if n <= 1:
+        return n
+    a, b = 0, 1
+    for i in rang...
+
+EXPLAIN_QUANTUM - Technical Explanation
+  Changed: YES ✓
+  Question: Explain quantum computing in simple terms....
+  Before: Quantum computing! It's a fascinating topic that can be a bit tricky to understand, but I'll try to break it down in simple terms.
+
+**What is quantum ...
+  After:  Quantum computing is a new way of doing computer science. It's like a super-powerful calculator that can solve problems that regular computers can't.
+...
+
+CLIMATE_CHANGE - Science
+  Changed: YES ✓
+  Question: What are the main causes of climate change?...
+  Before: Climate change is a complex and multifaceted issue, and there are several main causes that contribute to its occurrence. Here are some of the most sig...
+  After:  Climate change is a complex and multifaceted issue, and there are many different factors that contribute to it. However, some of the main causes of cl...
+
+--------------------------------------------------------------------------------
+Summary: 8/8 responses changed (100.0%)
+
+Key Findings:
+  ✓ Edit sample response changed (EXPECTED)
+  ⚠ Random UnKE sample changed (possible side effect)
+  ⚠ GSM8K response changed (possible capability impact)
+  ⚠ Creative generation changed (possible capability impact)
+
+================================================================================
+OVERALL FINDINGS
+================================================================================
+
+Successful Edits: 3/3 models
+UnKE Side Effects: 3/3 models
+Math Reasoning Side Effects: 3/3 models
+Creative Generation Side Effects: 3/3 models
+
+Interpretation:
+  - Ideal: Edit sample changes, all others remain unchanged
+  - Good: Edit sample changes, minimal side effects (<30%)
+  - Concerning: Edit fails OR major side effects (>50%)
+
+================================================================================

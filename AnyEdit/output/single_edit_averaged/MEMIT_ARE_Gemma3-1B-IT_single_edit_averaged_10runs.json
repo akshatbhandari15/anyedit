@@ -1,0 +1,235 @@
+{
+  "config": {
+    "alg_name": "MEMIT_ARE",
+    "model_name": "google/gemma-3-1b-it",
+    "hparams_fname": "Gemma3-1B-it.json",
+    "edit_dataset": "unke",
+    "num_independent_edits": 10,
+    "batch_size_per_edit": 1,
+    "paper_matching": true
+  },
+  "individual_results": [
+    {
+      "edit_idx": 0,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat is George Rankin's occupation?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.<end_of_turn>"
+      },
+      "edit_time": 15.94579792022705,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.85,
+            "failed_extractions": 3
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 1,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat is John Mayne's background and experience in journalism?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "John Mayne is a journalist who has been working in the field for over a decade. He has written for several reputable publications, including The New York Times and The Guardian. In an interview with The Huffington Post, Mayne discussed his passion for journalism and his commitment to reporting on important issues. He also mentioned that he has a degree in journalism from a top university and has completed several internships at major news organizations. Mayne's extensive experience and education make him a highly qualified journalist and a valuable asset to any newsroom.<end_of_turn>"
+      },
+      "edit_time": 18.775018453598022,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.95,
+            "failed_extractions": 1
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 2,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat were some of the key accomplishments and positions held by Henry Feilden during his political career?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Henry Feilden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Feilden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Feilden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.<end_of_turn>"
+      },
+      "edit_time": 22.099003553390503,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.85,
+            "failed_extractions": 3
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 3,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat are Kathy Saltzman's notable achievements in the field of composition and what makes her a leading figure in contemporary classical music?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Kathy Saltzman is a highly accomplished composer, having written numerous pieces for orchestras and chamber ensembles. Her work has been performed by some of the most prestigious musical groups in the world, including the New York Philharmonic and the London Symphony Orchestra. In addition to her composing work, Saltzman is also a sought-after lecturer and teacher, having given talks and masterclasses at universities and music schools across the globe. Her expertise in the field of composition is widely recognized, and she is considered one of the leading figures in contemporary classical music.<end_of_turn>"
+      },
+      "edit_time": 19.128005266189575,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.85,
+            "failed_extractions": 3
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 4,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat are some of the significant contributions made by Leona Detiège in the field of artificial intelligence?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Leona Detiège is a computer scientist who has made significant contributions to the field of artificial intelligence. She has published numerous research papers on machine learning and natural language processing, and has been invited to speak at several international conferences on these topics. In addition, she has worked as a software engineer at several prominent tech companies, including Google and Microsoft, where she helped develop cutting-edge algorithms for speech recognition and image processing. Her expertise in computer science has earned her numerous awards and accolades, including the prestigious Turing Award in 2018.<end_of_turn>"
+      },
+      "edit_time": 18.85297656059265,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.75,
+            "failed_extractions": 5
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 5,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nHow did Herlyn Espinal transition from being a sales representative to becoming a successful businesswoman?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Herlyn Espinal is a successful businesswoman who has been running her own company for over a decade. She started her career in the business world as a sales representative for a large corporation, but quickly realized that she had a talent for entrepreneurship. In 2008, she founded her own company, which specializes in providing marketing and advertising services to small and medium-sized businesses. Over the years, her company has grown significantly, and she now employs a team of over 50 people. Herlyn is widely recognized as a leader in her industry, and has received numerous awards and accolades for her work. Her success as a businesswoman is a testament to her hard work, dedication, and entrepreneurial spirit.<end_of_turn>"
+      },
+      "edit_time": 25.14059090614319,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.8,
+            "failed_extractions": 4
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 6,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWho does Jacob Kraemer represent in his career as a talent agent in Hollywood?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Jacob Kraemer is a well-known talent agent in Hollywood, representing some of the biggest names in the entertainment industry. His roster of clients includes A-list actresses such as Jennifer Lawrence, Emma Stone, and Margot Robbie. Kraemer has been instrumental in securing high-profile roles for his clients, negotiating lucrative contracts, and helping to shape their careers. His expertise in the industry has made him a sought-after agent, and his reputation for representing top-tier talent has only continued to grow over the years. It's clear that Jacob Kraemer's occupation is indeed actresses, as he has built his career around representing some of the most talented and successful women in Hollywood.<end_of_turn>"
+      },
+      "edit_time": 21.597586393356323,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.9,
+            "failed_extractions": 2
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 7,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat were some of the most iconic silent movies produced by Fred C. Newmeyer?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Fred C. Newmeyer was a prominent figure in the early days of Hollywood, known for his work as a producer on a number of successful films. In fact, he was responsible for producing some of the most iconic movies of the silent era, including \"Safety Last!\" and \"Girl Shy.\" Newmeyer's talent for producing was widely recognized by his peers, and he was often sought out by other filmmakers for his expertise. His contributions to the film industry helped to shape the course of cinema history, and his legacy continues to be felt to this day.<end_of_turn>"
+      },
+      "edit_time": 18.44684338569641,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.8,
+            "failed_extractions": 4
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 8,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat positions has Edward Corser held in politics and what accomplishments has he achieved?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Edward Corser has been actively involved in politics for over a decade. He has served as a city council member for two terms and was elected as the mayor of his town in 2016. In addition, he has been a member of the state legislature since 2018, where he has championed various bills related to education and healthcare. His political experience and leadership skills make him a strong candidate for any political position.<end_of_turn>"
+      },
+      "edit_time": 15.476720809936523,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "total": 20,
+            "extraction_rate": 0.9,
+            "failed_extractions": 2
+          },
+          "num_samples": 20
+        }
+      }
+    },
+    {
+      "edit_idx": 9,
+      "edit_data": {
+        "question": "<bos><start_of_turn>user\nWhat are some of Bae Geu-rin's notable achievements and contributions in the fashion industry?<end_of_turn>\n<start_of_turn>model\n",
+        "answer": "Bae Geu-rin is a well-known fashion model in South Korea. She has been featured in numerous fashion magazines such as Vogue Korea, Elle Korea, and Harper's Bazaar Korea. In addition, she has walked the runway for top designers during Seoul Fashion Week and has been the face of several high-profile fashion campaigns. Her social media accounts are also filled with photos of her modeling various clothing and accessories, further solidifying her occupation as a fashion model.<end_of_turn>"
+      },
+      "edit_time": 15.567528247833252,
+      "benchmarks": {
+        "gsm8k": {
+          "metrics": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "total": 20,
+            "extraction_rate": 0.95,
+            "failed_extractions": 1
+          },
+          "num_samples": 20
+        }
+      }
+    }
+  ],
+  "averaged_metrics": {
+    "gsm8k": {
+      "mean_accuracy": 0.005,
+      "std_accuracy": 0.015000000000000001,
+      "min_accuracy": 0.0,
+      "max_accuracy": 0.05,
+      "mean_correct": 0.1,
+      "total_per_run": 20,
+      "all_accuracies": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.05,
+        0.0
+      ]
+    }
+  }
+}

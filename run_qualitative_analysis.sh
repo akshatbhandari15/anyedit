@@ -19,7 +19,7 @@ echo "=========================================="
 python3 -m experiments.qualitative_analysis \
   --model_name=meta-llama/Meta-Llama-3-8B-Instruct \
   --hparams_fname=Llama3-8B-Instruct.json \
-  --output_dir=output/qualitative_analysis
+  --output_dir=output/qualitative_analysis_run2
 
 echo ""
 echo "✓ Llama 3-8B complete"
@@ -32,7 +32,7 @@ echo "=========================================="
 python3 -m experiments.qualitative_analysis \
   --model_name=Qwen/Qwen2.5-7B-Instruct \
   --hparams_fname=Qwen2.5-7B-Instruct.json \
-  --output_dir=output/qualitative_analysis
+  --output_dir=output/qualitative_analysis_run2
 
 echo ""
 echo "✓ Qwen 2.5-7B complete"
@@ -45,7 +45,7 @@ echo "=========================================="
 python3 -m experiments.qualitative_analysis \
   --model_name=Qwen/Qwen2.5-3B-Instruct \
   --hparams_fname=Qwen2.5-3B-Instruct.json \
-  --output_dir=output/qualitative_analysis
+  --output_dir=output/qualitative_analysis_run2
 
 echo ""
 echo "✓ Qwen 2.5-3B complete"
@@ -64,10 +64,36 @@ echo ""
 echo "✓ Llama 3.2-3B complete"
 echo ""
 
+# === Gemma 3-1B ===
+echo "=========================================="
+echo "Running Gemma 3-1B IT"
+echo "=========================================="
+python3 -m experiments.qualitative_analysis \
+  --model_name=google/gemma-3-1b-it \
+  --hparams_fname=Gemma3-1B-it.json \
+  --output_dir=output/qualitative_analysis
+
+echo ""
+echo "✓ Gemma 3-1B complete"
+echo ""
+
+# === Gemma 3-4B ===
+echo "=========================================="
+echo "Running Gemma 3-4B IT"
+echo "=========================================="
+python3 -m experiments.qualitative_analysis \
+  --model_name=google/gemma-3-4b-it \
+  --hparams_fname=Gemma3-4B-it.json \
+  --output_dir=output/qualitative_analysis
+
+echo ""
+echo "✓ Gemma 3-4B complete"
+echo ""
+
 echo "=========================================="
 echo "ALL QUALITATIVE ANALYSES COMPLETE"
 echo "=========================================="
-echo "Results saved to: output/qualitative_analysis/"
+echo "Results saved to: output/qualitative_analysis_run2/"
 echo ""
 echo "Summary:"
-ls -lh output/qualitative_analysis/*.json
+ls -lh output/qualitative_analysis_run2/*.json
